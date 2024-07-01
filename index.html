@@ -26,7 +26,7 @@
 </head>
 
 
-<body>
+<body id="box">
 
     <!-- ローディング画面 -->
 
@@ -566,6 +566,9 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
     </script>
 
     <script>
+
+
+        $('#box').css('height', $(window).height());
 
         $(function () {
             function end_loading() {
