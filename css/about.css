@@ -1,0 +1,1025 @@
+@charset "UTF-8";
+
+/* -------------------- 
+   共通
+ -------------------- */
+
+.profile,
+.history,
+.skills,
+.strength,
+.love,
+.design {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.profile .wrapper,
+.history .wrapper,
+.skills .wrapper,
+.strength .wrapper,
+.love .wrapper,
+.design .wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.history .top_contents,
+.skills .top_contents,
+.strength .top_contents,
+.love .top_contents,
+.design .top_contents {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.page_ttl.about {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .skills .top_contents,
+  .strength .top_contents,
+  .love .top_contents,
+  .design .top_contents {
+    display: block;
+  }
+
+  /* .page_ttl p:nth-of-type(2) {
+    width: 86px;
+  } */
+
+  .page_ttl.about {
+    display: block;
+  }
+
+  .page_ttl.about p:nth-of-type(1) {
+    width: 100px;
+  }
+}
+
+/* -------------------- 
+   共通 セクションタイトル 
+-------------------- */
+
+.pc-ttl {
+  width: 60px;
+  position: relative;
+}
+
+h2 {
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  writing-mode: vertical-rl;
+  font-feature-settings: initial;
+  background: #fffcf5;
+  border: 1px solid #ec6c4e;
+  padding: 21px 14px 68px;
+}
+
+.cursive {
+  font-size: 30px;
+  line-height: 0.6;
+  letter-spacing: 0.12em;
+  transform: rotate(-15deg);
+  position: absolute;
+  bottom: 40px;
+  left: 22px;
+}
+
+.erase {
+  width: 3px;
+  height: 20px;
+  background: #fffcf5;
+  position: absolute;
+  top: 23px;
+  left: 58px;
+}
+
+.ttl_line {
+  /* width: 486px; */
+  border-bottom: 1px solid #ec6c4e;
+  position: absolute;
+  bottom: 38px;
+  right: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .pc-ttl {
+    width: auto;
+    /* position: static; */
+  }
+
+  h2 {
+    color: #ec6c4e;
+    writing-mode: horizontal-tb;
+    padding: 0px;
+    background: transparent;
+    border: none;
+    position: relative;
+  }
+
+  .erase {
+    display: none;
+  }
+
+  /* .ttl_line {
+    top: 16px;
+    bottom: auto;
+    right: 158px;
+    left: 35px;
+  } */
+}
+
+/* --------------------
+プロフィール
+-------------------- */
+
+.profile {
+  background-image: url(../images/flower001.png);
+  background-repeat: no-repeat;
+  background-position: 58% bottom;
+}
+
+.profile .first_contents {
+  display: flex;
+  width: 93vw;
+  justify-content: center;
+  gap: 10%;
+}
+
+.profile .pc-ttl {
+  height: 300px;
+}
+
+.profile_line {
+  width: 486px;
+}
+
+.profile .sp-ttl {
+  display: none;
+}
+
+.profile .pc_txt,
+.profile .txt {
+  width: 590px;
+  padding-right: 5%;
+}
+
+.profile .pc_txt p {
+  width: 590px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.profile .sp_txt,
+.profile .sp_txt_last {
+  display: none;
+}
+
+.profile .second_contents {
+  width: 71vw;
+}
+
+.profile .second_contents p:nth-of-type(2) {
+  font-size: 18px;
+  color: #ec6c4e;
+  width: 620px;
+  margin-top: 95px;
+}
+
+/* 1366以上の設定 */
+@media screen and (min-width: 1366px) {
+  .profile .second_contents {
+    width: 55vw;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .profile {
+    background-size: 160px;
+  }
+
+  .profile .first_contents {
+    gap: 7%;
+  }
+
+  .profile .pc_txt,
+  .profile .txt {
+    width: 503px;
+    padding-right: 0;
+  }
+
+  .profile .pc_txt p,
+  .profile .txt p {
+    line-height: 1.7;
+
+    width: 503px;
+  }
+
+  .profile .second_contents {
+    width: 84vw;
+  }
+
+  .profile .second_contents p:nth-of-type(2) {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profile {
+    background-position: 4% 93%;
+  }
+
+  .profile .first_contents {
+    display: block;
+    width: 738px;
+  }
+
+  .profile .pc-ttl {
+    display: none;
+  }
+
+  .profile .sp-ttl {
+    display: block;
+    height: auto;
+    margin: 69px auto 28px 97px;
+  }
+
+  .profile .sp-ttl_box {
+    position: relative;
+  }
+
+  .profile .cursive {
+    left: -38px;
+    bottom: 32px;
+  }
+
+  .profile_line {
+    width: 80px;
+    top: 16px;
+    bottom: auto;
+    right: auto;
+    left: -100px;
+  }
+
+  .profile .pc_txt,
+  .profile .pc_txt_last {
+    display: none;
+  }
+
+  .profile .sp_txt {
+    display: flex;
+    gap: 90px;
+    margin-top: 0px;
+    margin-left: 64px;
+  }
+
+  .profile .sp_txt p,
+  .profile .second_contents p:nth-of-type(1) {
+    width: 263px;
+    line-height: 1.7;
+  }
+
+  .profile .second_contents {
+    width: 500px;
+    margin-left: 42px;
+    margin-top: 125px;
+  }
+
+  .profile .sp_txt_last {
+    display: block;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    line-height: 1.4;
+    color: #ec6c4e;
+    width: 216px;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+/* --------------------
+ヒストリー
+-------------------- */
+
+.history {
+  width: 100vw;
+}
+
+.history .top_contents {
+  gap: 6%;
+  /* position: relative; */
+}
+
+.history .pc-ttl {
+  height: 388px;
+}
+
+.history_line {
+  width: 220px;
+}
+
+.history .contents {
+  display: flex;
+  justify-content: space-between;
+  gap: 1%;
+  width: 72%;
+  max-width: 983px;
+  position: relative;
+}
+
+.history .img {
+  width: 114%;
+  position: absolute;
+  bottom: 0px;
+  right: 0%;
+  z-index: 1;
+}
+
+.history .content {
+  border-top: 1px solid #f2917e;
+  border-left: 1px solid #f2917e;
+  display: flex;
+  position: relative;
+  width: 90px;
+  height: 400px;
+}
+
+h3 {
+  letter-spacing: 0.18em;
+  writing-mode: vertical-rl;
+  color: #fffcf5;
+  width: 27px;
+  height: 86px;
+  background-color: #f2917e;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.history .txt {
+  writing-mode: vertical-rl;
+  display: block;
+  margin-top: 14px;
+  margin-left: 9%;
+  /* position: relative; */
+  z-index: 2;
+}
+
+.line_diagonal {
+  width: 13px;
+  border-bottom: 1px solid #f2917e;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -5px;
+  left: 88%;
+}
+
+.history .content_last {
+  display: flex;
+  gap: 14px;
+}
+
+.history .content_last p {
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+  /* position: relative; */
+  z-index: 2;
+}
+
+.history .content_bottom {
+  width: 280px;
+  margin-top: 88px;
+}
+
+.history .content_bottom p:nth-of-type(1) {
+  color: #fffcf5;
+  text-align: center;
+  line-height: 2;
+  width: 263px;
+  border: 1px solid #fffcf5;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
+.history .content_bottom p:nth-of-type(2) {
+  color: #fffcf5;
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+  text-align: center;
+  width: 270px;
+  margin: 10px auto 0px;
+  position: relative;
+  z-index: 4;
+}
+
+@media screen and (max-width: 1100px) {
+  .history {
+    width: 170vw;
+  }
+
+  .history .contents {
+    max-width: none;
+    /* min-width: 840px; */
+    width: 840px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .history {
+    /* width: 980px; */
+    width: 1080px;
+    background-image: url(../images/flower002.png);
+    background-repeat: no-repeat;
+    background-position: right 93%;
+    background-size: 160px;
+  }
+
+  .history .top_contents {
+    display: block;
+    width: 100%;
+  }
+
+  .history .pc-ttl {
+    width: 290px;
+    height: auto;
+    margin: 69px 0px 28px;
+    /* position: relative; */
+  }
+
+  .history h2 {
+    width: 290px;
+    margin-left: 0px;
+  }
+
+  .history .cursive {
+    top: -22px;
+    left: -52px;
+    bottom: auto;
+  }
+
+  .history_line {
+    top: 16px;
+    bottom: auto;
+    right: 301px;
+    /* left: 35px; */
+  }
+
+  .history .contents {
+    width: 840px;
+    margin-top: 40px;
+  }
+}
+
+/* --------------------
+スキル 
+-------------------- */
+
+.skills {
+  width: 90vw;
+  background-image: url(../images/flower002.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.skills .pc-ttl {
+  height: 263px;
+}
+
+.skills_line {
+  width: 90px;
+}
+
+.skills .pc_table:nth-of-type(1) {
+  margin-left: 120px;
+}
+
+.skills .pc_table:nth-of-type(2) {
+  margin-left: 45px;
+}
+
+.pc_table {
+  margin-top: 30px;
+}
+
+th {
+  padding-right: 25px;
+}
+
+td {
+  height: 68px;
+  padding-right: 10px;
+}
+
+.skills .first,
+.skills .second,
+.skills .third {
+  font-family: din-2014, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: normal;
+  color: #ec6c4e;
+  text-align: center;
+}
+
+.skills .second {
+  color: #f2917e;
+}
+
+.skills .third {
+  color: #ffc0b3;
+}
+
+.skills .ranking {
+  width: 40px;
+}
+
+.skills-icon {
+  width: 73px;
+}
+
+.skills .icon_name {
+  font-family: din-2014, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: normal;
+}
+
+.skills .icon_top {
+  width: 56px;
+}
+.skills .icon_middle {
+  width: 47px;
+}
+.skills .icon_bottom {
+  width: 54px;
+}
+
+.sp-ttl,
+.sp_table {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .skills {
+    width: 120vw;
+  }
+
+  .skills table:nth-of-type(1) {
+    margin-left: 8%;
+  }
+
+  .skills table:nth-of-type(2) {
+    margin-left: 3%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .skills {
+    width: 72vw;
+    background-image: none;
+  }
+
+  .skills .top_contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .skills .sp-ttl {
+    display: block;
+    height: auto;
+    /* display: flex; */
+    justify-content: center;
+    margin: 69px auto 28px;
+  }
+
+  .skills .sp-ttl_box {
+    position: relative;
+  }
+
+  .skills .cursive {
+    left: -38px;
+    bottom: 32px;
+  }
+
+  .skills_line {
+    top: 16px;
+    bottom: auto;
+    right: 158px;
+    /* left: 35px; */
+  }
+
+  .skills .pc-ttl,
+  .pc_table {
+    display: none;
+  }
+
+  .sp_table {
+    display: flex;
+    justify-content: center;
+  }
+
+  .middle {
+    margin-top: 45px;
+  }
+
+  th {
+    width: 85px;
+    padding-right: 0px;
+  }
+
+  td {
+    width: 85px;
+    height: auto;
+    text-align: center;
+    padding-right: 0px;
+  }
+}
+
+/* -------------------- 
+共通 ストレングス・ラブ・デザイン 
+-------------------- */
+
+.strength .top_contents,
+.love .top_contents,
+.design .top_contents {
+  gap: 84px;
+}
+
+.strength .content,
+.love .content,
+.design .content {
+  display: flex;
+}
+
+.strength .content:nth-of-type(n + 2),
+.love .content:nth-of-type(n + 2),
+.design .content:nth-of-type(n + 2) {
+  margin-top: 37px;
+}
+
+.check {
+  width: 28px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .strength .top_contents,
+  .love .top_contents,
+  .design .top_contents {
+    gap: 0px;
+  }
+
+  .strength .contents,
+  .love .contents,
+  .design .contents {
+    width: 272px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* -------------------- 
+ストレングス
+-------------------- */
+
+.strength {
+  width: 62vw;
+  /* width: 650px; */
+  background-image: url(../images/flower003.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.strength .pc-ttl {
+  height: 227px;
+}
+
+.strength_line {
+  width: 100px;
+}
+
+.strength .sp-ttl {
+  display: none;
+}
+
+.strength .contents > p:nth-of-type(1) {
+  margin-top: 78px;
+}
+
+.strength .contents > p:nth-of-type(2) {
+  width: 272px;
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 1100px) {
+  .strength {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .strength {
+    width: 600px;
+    background-position: right 93%;
+    background-size: 160px;
+  }
+  .strength .top_contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .strength .pc-ttl {
+    display: none;
+  }
+
+  .strength .sp-ttl_box {
+    position: relative;
+  }
+
+  .strength .sp-ttl {
+    display: block;
+    height: auto;
+    /* display: flex; */
+    justify-content: center;
+
+    margin: 69px auto 65px;
+  }
+
+  .strength .cursive {
+    left: -38px;
+    bottom: 32px;
+  }
+
+  .strength_line {
+    top: 16px;
+    bottom: auto;
+    right: 137px;
+    /* left: 35px; */
+  }
+
+  .strength .contents > p:nth-of-type(1) {
+    width: 272px;
+  }
+}
+
+/* -------------------- 
+ラブ
+-------------------- */
+
+.love {
+  width: 70vw;
+}
+
+.love .pc-ttl {
+  height: 223px;
+}
+
+.love .sp-ttl {
+  display: none;
+}
+
+.love_line {
+  width: 100px;
+}
+
+@media screen and (max-width: 1100px) {
+  .love {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .love {
+    /* width: 110vw; */
+    width: 460px;
+  }
+
+  .love .top_contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .love .pc-ttl {
+    display: none;
+  }
+
+  .love .sp-ttl_box {
+    position: relative;
+  }
+
+  .love .sp-ttl {
+    display: block;
+    height: auto;
+    /* display: flex; */
+    justify-content: center;
+
+    margin: 69px auto 65px;
+  }
+
+  .love .cursive {
+    left: -38px;
+    bottom: 32px;
+  }
+
+  .love_line {
+    top: 16px;
+    bottom: auto;
+    right: 137px;
+    /* left: 35px; */
+  }
+}
+
+/* --------------------
+デザイン
+-------------------- */
+
+.design {
+  width: 80vw;
+  /* width: 100vw; */
+  background-image: url(../images/flower004.png);
+  background-repeat: no-repeat;
+  background-position: 88% bottom;
+}
+
+.design .top_contents {
+  justify-content: flex-start;
+  margin-left: 23%;
+}
+
+.design .pc-ttl {
+  height: 268px;
+}
+
+.design_line {
+  width: 100px;
+}
+
+.design .sp-ttl {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .design {
+    width: 90vw;
+  }
+
+  .design .top_contents {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .design {
+    width: 100vw;
+    background-position: 88% 93%;
+    background-size: 160px;
+  }
+  .design .top_contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 0%;
+  }
+
+  .design .pc-ttl {
+    display: none;
+  }
+
+  .design .sp-ttl_box {
+    position: relative;
+  }
+
+  .design .sp-ttl {
+    display: block;
+    height: auto;
+    /* display: flex; */
+    justify-content: center;
+
+    margin: 69px auto 65px;
+  }
+
+  .design .cursive {
+    left: -38px;
+    bottom: 32px;
+  }
+
+  .design_line {
+    top: 16px;
+    bottom: auto;
+    right: 180px;
+    /* left: 35px; */
+  }
+}
+
+/* 1366以上の設定 */
+@media screen and (min-width: 1366px) {
+  .skills {
+    width: 1060px;
+  }
+  .strength,
+  .love {
+    width: 60vw;
+    /* width: 960px; */
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーー
+文字アニメーション 流れるテキスト
+ーーーーーーーーーーーーーーーーーーーー */
+
+/*全共通*/
+
+.slide-in {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.slide-in_inner {
+  display: inline-block;
+}
+
+/*左右のアニメーション*/
+.leftAnime {
+  opacity: 0; /*事前に透過0にして消しておく*/
+}
+
+.slideAnimeLeftRight {
+  animation-name: slideTextX100;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  /* opacity: 1; */
+  opacity: 0;
+}
+
+@keyframes slideTextX100 {
+  from {
+    transform: translateX(-100%); /*要素を左の枠外に移動*/
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0); /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+.slideAnimeRightLeft {
+  animation-name: slideTextX-100;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slideTextX-100 {
+  from {
+    transform: translateX(100%); /*要素を右の枠外に移動*/
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0); /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーー
+ヒストリーのグラフが横からフェードインする
+ーーーーーーーーーーーーーーーーーーーー*/
+
+.fadeIn {
+  animation-name: fadeInAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+
+.fadeInTrigger {
+  opacity: 0;
+}

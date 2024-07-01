@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaori's Portfolio</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/works_hp_detail.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'ayw6ybt',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+
+    <!-- 右固定ナビゲーション -->
+
+    <header>
+        <div class="header">
+            <div class="wrapper">
+                <nav class="pc_nav">
+                    <ul class="pc-nav_list">
+                        <li class="en here"><a href="./index.html">TOP</a></li>
+                        <li class="en"><a href="./about.html">ABOUT ME</a></li>
+                        <li class="en"><a href="#contact">CONTACT</a></li>
+                        <li>
+                            <ul class="icon">
+                                <li>
+                                    <div class="x">
+                                        <a href="https://x.com/rin_de_sign"> <img src="./images/logo-black.png"
+                                                alt="Xのアイコン">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list-insta">
+                                    <div class="insta">
+                                        <a href="https://www.instagram.com/rin_de_sing/"> <img
+                                                src="./images/Instagram_Glyph_Black.svg" alt="Instagramのアイコン">
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="line_vertical"></div>
+                    <ul class="pc-nav_list">
+                        <li class="en"><a href="./works_hp.html">HP</a></li>
+                        <li class="en"><a href="./works_lp.html">LP</a></li>
+                        <li class="en"><a href="./works_bn.html">BANNER</a></li>
+                        <li class="en not_btn">WORKS</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="page_ttl">
+                <p class="en">WORKS</p>
+                <p class="en">HP</p>
+            </div>
+
+            <div class="sp_btn"><span></span></div>
+            <div class="sp_menu">
+                <div>
+                    <div class="menu_portfolioname">
+                        <p class="en">THANKS TO COMING. THIS IS THE <span>KAORI’S PORTFORIO</span>.THANKS TO COMING.
+                            THIS IS THE
+                            <span>KAORI’S PORTFORIO</span>.
+                        </p>
+                        <p class="en">THANKS TO COMING. THIS IS THE <span>KAORI’S PORTFORIO</span>.THANKS TO COMING.
+                            THIS IS THE
+                            <span>KAORI’S PORTFORIO</span>.
+                        </p>
+                    </div>
+                    <div class="box">
+                        <nav class="sp_nav">
+                            <ul class="sp-nav_list">
+                                <li class="en sp-nav_listitem current"><a href="./index.html">TOP</a></li>
+                                <li class="en sp-nav_listitem"><a href="./about.html">ABOUT ME</a></li>
+                                <li class="en sp-nav_listitem"><a href="./works_hp.html">HP<span>WORKS</span></a></li>
+                                <li class="en sp-nav_listitem"><a href="./works_lp.html">LP<span>WORKS</span></a></li>
+                                <li class="en sp-nav_listitem"><a href="./works_bn.html">BANNER<span>WORKS</span></a>
+                                </li>
+                                <li class="en sp-nav_listitem"><a href="./contact.html">CONTACT</a></li>
+                                <li class="sp-nav_iconlist">
+                                    <ul class="sp-icon">
+                                        <li class="en sp-icon_txt">SNS</li>
+                                        <li class="en sp-icon_x"><a href="https://x.com/rin_de_sign"><img
+                                                    src="./images/logo-black.png" alt="Xのアイコン"></a></li>
+                                        <li class="en sp-icon_insta"><a
+                                                href="https://www.instagram.com/rin_de_sing/"><img
+                                                    src="./images/Instagram_Glyph_Black.svg" alt="Instagramのアイコン"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </nav>
+                        <div class="triangle_top"></div>
+                        <div class="triangle_bottom"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="fade-effect"></div>
+        </div>
+    </header>
+
+    <!-- 左固定アニメーション -->
+
+    <div class="top_portfolioname">
+        <p class="en">THANKS TO COMING. THIS IS THE <span>KAORI’S PORTFORIO</span>.THANKS TO COMING. THIS IS THE
+            <span>KAORI’S PORTFORIO</span>.
+        </p>
+        <p class="en">THANKS TO COMING. THIS IS THE <span>KAORI’S PORTFORIO</span>.THANKS TO COMING.
+            THIS IS THE
+            <span>KAORI’S PORTFORIO</span>.
+        </p>
+    </div>
+
+    <!-- コピーライト -->
+
+    <div class="copy">
+        <p> <small>&copy; 2024 KAORI'S DESIGN</small>
+        </p>
+    </div>
+
+    <!-- 背景 -->
+
+    <div class="bg"></div>
+
+    <main>
+
+        <div class="container">
+            <div class="slides-wrapper">
+
+                <!-- 1.画像 -->
+
+                <section class="slide">
+                    <div class="pc_top wrapper section-inner">
+                        <div class="container">
+                            <div class="ttl">
+                                <h1>カフェサイト（架空）</h1>
+                                <p>HP</p>
+                            </div>
+                            <div class="img">
+                                <div class="img_pc"> <img src="./images/hp_cafe_1.png">
+                                </div>
+                                <div class="img_sp"> <img src="./images/works_lp_00.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2.テキスト -->
+
+                <section class="slide">
+                    <div class="sp_container section-inner">
+                        <div class="inner">
+                            <div class="contents wrapper bottom-txt">
+                                <div class="sp_ttl">
+                                    <h1>カフェサイト（架空）</h1>
+                                </div>
+                                <div class="list_left">
+                                    <div class="list_row">
+                                        <ul>
+                                            <li class="list_ttl">制作期間</li>
+                                            <li class="list_txt">２日</li>
+                                        </ul>
+                                    </div>
+                                    <div class="list_row">
+                                        <ul>
+                                            <li class="list_ttl">担当範囲</li>
+                                            <li class="list_txt">Webデザイン、コーディング（HTML・CSS）</li>
+                                        </ul>
+                                    </div>
+                                    <div class="list_row">
+                                        <ul>
+                                            <li class="list_ttl">使用ツール</li>
+                                            <li class="list_txt">Adobe Illustrator・Adobe photoshop</li>
+                                        </ul>
+                                    </div>
+                                    <div class="list_row">
+                                        <ul>
+                                            <li class="list_ttl">ターゲット</li>
+                                            <li class="list_txt">50〜60代の女性</li>
+                                        </ul>
+                                    </div>
+                                    <div class="list_row">
+                                        <ul>
+                                            <li class="list_ttl">コンセプト</li>
+                                            <li class="list_txt">ナチュラル、おしゃれ</li>
+                                        </ul>
+                                    </div>
+                                    <div class="list_row">
+                                        <ul>
+                                            <li class="list_ttl">目的・課題</li>
+                                            <li class="list_txt">ー</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="point">
+                                    <h2>制作ポイント</h2>
+                                    <p>訴求ポイントは「簡単」に作ることができるところ。<br>
+                                        「簡単」というだけでは消費者に正しく伝わらないため、具体的に「水・肉・トマト缶だけ」という文言を目立たせ、パッと見ただけでもイメージが湧きやすいように料理画像も併用した。
+                                        <br><br>
+                                        またターゲット層に合わせて、最低限の文字数とし、視認性に配慮した。
+                                    </p>
+                                    <p>訴求ポイントは「簡単」に作ることができるところ。<br>
+                                        「簡単」というだけでは消費者に正しく伝わらないため、具体的に「水・肉・トマト缶だけ」という文言を目立たせ、パッと見ただけでもイメージが湧きやすいように料理画像も併用した。
+                                        <br><br>
+                                        またターゲット層に合わせて、最低限の文字数とし、視認性に配慮した。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3.ALLPAGES -->
+
+                <section class="slide">
+                    <div class="pc_all section-inner">
+                        <div class="allpage">
+                            <p class="en">ALL PAGES</p>
+                            <div class="maxheight fadeInTrigger">
+                                <img src="./images/hp_cafe_2.jpg" alt="">
+                            </div>
+                            <div class="fadeInTrigger">
+                                <img src="./images/hp_cafe_3.jpg" alt="">
+                            </div>
+                            <div class="maxheight fadeInTrigger">
+                                <img src="./images/hp_cafe_4.jpg" alt="">
+                            </div>
+                            <div class="fadeInTrigger">
+                                <img src="./images/hp_cafe_5.jpg" alt="">
+                            </div>
+                            <div class="fadeInTrigger">
+                                <img src="./images/hp_cafe_6.jpg" alt="">
+                            </div>
+                            <div class="fadeInTrigger">
+                                <img src="./images/hp_cafe_7.jpg" alt="">
+                            </div>
+                            <div class="txt_wrapper fadeInTrigger">
+                                <p class="en">RESPONSIVE</p>
+                            </div>
+                            <div class="fadeInTrigger">
+                                <img src="./images/hp_cafe_8.jpg" alt="">
+                            </div>
+                            <div class="fadeInTrigger">
+                                <img src="./images/hp_cafe_9.jpg" alt="">
+                            </div>
+                            <div class="fadeInTrigger">
+                                <img src="./images/hp_cafe_10.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <a href="">
+                                <div class="btn">
+                                    <p class="en">CONTACT</p>
+                                    <img src="./images/mail.svg">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="sp_top">
+                        <div class="container">
+                            <div class="img">
+                                <div class="img_pc"> <img src="./images/hp_cafe_1.png">
+                                </div>
+                                <div class="img_sp"> <img src="./images/works_lp_00.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+        <!-- <section data-scroll-section class="scroll_section forth_section verticalscrolling">
+            <div class="sp_all sliders_wrapper section-inner">
+                <div class="sp_allpage">
+                    <p class="en slide">ALL PAGES</p>
+                    <div class="images_top slide">
+                        <img src="./images/hp_cafe_all_1.jpg" alt="">
+                    </div>
+                    <div class="images slide">
+                        <div class="images_left">
+                            <div>
+                                <img src="./images/hp_cafe_all_2.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./images/hp_cafe_all_3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="images_right">
+                            <div>
+                                <img src="./images/hp_cafe_all_4.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./images/hp_cafe_all_5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper slide">
+                        <a href="">
+                            <div class="btn">
+                                <p class="en">CONTACT</p>
+                                <img src="./images/mail.svg">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+    </main>
+
+
+    <script>
+
+        const wrapper = document.querySelector('.slides-wrapper');
+        if (wrapper) {
+            // gsap.registerPlugin(ScrollTrigger); // npm/yarnの際に必要
+            const slides = gsap.utils.toArray('.slide');
+            const wrapperWidth = wrapper.offsetWidth;
+            const wrapperHeight = wrapper.offsetHeight;
+            // const windowWidth = window.innerWidth;
+            // const scrollWidthHorizontal = wrapperWidth - windowWidth
+            /**
+            * 横スクロール開始
+            */
+            gsap.to(slides, {
+                xPercent: -100 * (slides.length - 1), // transformX
+                ease: "none", // easingの設定
+                scrollTrigger: { // scrollTrigger
+                    trigger: wrapper, // アニメーションの対象となる要素
+                    pin: true, // 要素を固定する
+                    scrub: 1, // スクロールとアニメーションを同期させる。数値で秒数の設定に
+                    markers: true,
+                    // snap: { // スナップスクロールにする
+                    //     snapTo: 1 / (slides.length - 1), // スナップで移動させる位置
+                    //     duration: { min: .4, max: .6 }, // スナップで移動する際の遅延時間
+                    //     ease: "none" // easing
+                    // },
+                    top: 'top center',
+                    // end: () => 600, // アニメーションの終了タイミング
+                    // end: 'right right',
+                    // end: () => "+=" + wrapperHeight,// アニメーションの終了タイミング
+                    end: () => "+=" + wrapperWidth,// アニメーションの終了タイミング
+                    // end: () => "+=" + scrollWidthHorizontal // アニメーションの終了タイミング
+                    anticipatePin: 1,
+                    invalidateOnRefresh: true,
+
+                }
+            })
+        }
+
+
+
+        const bg = document.querySelector('.bg')
+        const secondSection = document.querySelector('.second_section')
+        const secondSectionX = secondSection.getBoundingClientRect().x
+        // console.log(secondSectionX)
+        scroll.on('scroll', function (event) {
+            const scrollX = event.scroll.x
+            fadeAnime();/* アニメーション用の関数を呼ぶ*/
+
+            // console.log(scrollX)
+            if (scrollX <= secondSectionX) {
+                const opacity = 1 - (scrollX / secondSectionX)
+                bg.style.opacity = opacity
+            }
+        })
+
+
+
+        // PC版のALLPAGESが右からフェードインする
+
+        // 動きのきっかけとなるアニメーションの名前を定義
+        function fadeAnime() {
+
+            //ふわっと動くきっかけのクラス名と動きのクラス名の設定
+            $('.fadeInTrigger').each(function () { //fadeInUpTriggerというクラス名が
+                var elemPos = $(this).offset().left - 50; //要素より、50px左の
+                console.log(elemPos)
+                var scroll = $(window).scrollLeft();
+                var windowWidth = $(window).width();
+                if (scroll >= elemPos - windowWidth) {
+                    $(this).addClass('fadeIn');
+                    // 画面内に入ったらfadeInというクラス名を追記
+                } else {
+                    $(this).removeClass('fadeIn');
+                    // 画面外に出たらfadeInというクラス名を外す
+                }
+            });
+        }
+        // 画面をスクロールをしたら動かしたい場合の記述
+        $(window).scroll(function () {
+            fadeAnime();/* アニメーション用の関数を呼ぶ*/
+        });// ここまで画面をスクロールをしたら動かしたい場合の記述
+
+
+
+    </script>
+    <script>
+
+        // SP版メニュー
+
+        $(function () {
+            const $effect = $('.fade-effect');
+            const $menu = $('.sp_menu');
+            $effect.hide();
+            $('.sp_btn').on('click', function () {
+
+                $('.sp_btn').toggleClass('open');
+
+                if ($menu.is(':visible')) {
+                    $effect.addClass('show');
+                    $effect.show()
+                    setTimeout(function () {
+                        $effect.removeClass('show');
+                        $menu.hide();
+                        setTimeout(function () {
+                            $effect.hide()
+                        }, 200)
+                    }, 500)
+                } else {
+                    $effect.addClass('show');
+                    $effect.show()
+
+                    setTimeout(function () {
+                        $effect.removeClass('show');
+                        $menu.show();
+                        setTimeout(function () {
+                            $effect.hide()
+                        }, 200)
+
+                    }, 500)
+                }
+            })
+        });
+
+
+    </script>
+    <script>
+        $(function () {
+            if (window.matchMedia("(max-width: 768px)").matches) {
+
+
+                $('sp_container').toggleClass('active');
+                $('.contents').toggleClass('wrapper');
+                $('inner').toggleClass('wrapper');
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>

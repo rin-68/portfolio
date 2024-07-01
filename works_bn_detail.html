@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaori's Portfolio</title>
+    <link href="
+    https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+    " rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/works_hp_detail.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- CDN gsap 横から縦スクロール -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'ayw6ybt',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <style>
+        .page_ttl p:nth-of-type(2) {
+            width: 76px;
+        }
+
+
+        .ttl p {
+            width: 108px;
+        }
+
+        /* 横長のとき */
+
+        /* .pc_top .ttl {
+            margin-bottom: 56px;
+        }
+
+        .img_pc {
+            width: 545px;
+            height: auto;
+            margin-left: 58px;
+        }
+
+        .pc_top .img_pc img {
+            width: 100%;
+            height: auto;
+        } */
+
+        /* 正方形のとき */
+
+        .pc_top .ttl {
+            margin-bottom: 20px;
+        }
+
+        .pc_top .img {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* リンク */
+
+        .pc_all {
+            height: 100%;
+        }
+
+        /* SP版 正方形のとき */
+
+        .sp_top .img {
+            margin-top: 53px;
+            margin-left: 72px;
+        }
+
+        .sp_top .img_pc {
+            height: 234px;
+        }
+
+        /* SP版 横長のとき */
+
+        /* .sp_top .img {
+            margin-top: 85px;
+            margin-left: 71px;
+        }
+
+        .sp_top .img_pc {
+            width: 290px;
+            height: auto;
+        }
+
+        .sp_top .img_pc img {
+            width: 100%;
+            height: auto;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <!-- 右固定ナビゲーション -->
+
+    <header>
+        <div class="header">
+
+            <!-- PC版 -->
+
+            <div class="wrapper">
+                <nav class="pc_nav">
+                    <ul class="pc-nav_list">
+                        <li class="en "><a href="./index.html">TOP</a></li>
+                        <li class="en"><a href="./about.html">ABOUT ME</a></li>
+                        <li class="en"><a href="#contact">CONTACT</a></li>
+                        <li>
+                            <ul class="icon">
+                                <li>
+                                    <div class="x">
+                                        <a href="https://x.com/rin_de_sign"> <img src="./images/logo-black.png"
+                                                alt="Xのアイコン">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list-insta">
+                                    <div class="insta">
+                                        <a href="https://www.instagram.com/rin_de_sing/"> <img
+                                                src="./images/Instagram_Glyph_Black.svg" alt="Instagramのアイコン">
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="line_vertical"></div>
+                    <ul class="pc-nav_list">
+                        <li class="en "><a href="./works_hp.html">HP</a></li>
+                        <li class="en"><a href="./works_lp.html">LP</a></li>
+                        <li class="en here"><a href="./works_bn.html">BANNER</a></li>
+                        <li class="en not_btn">WORKS</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- SP版 -->
+
+            <div class="page_ttl hp">
+                <p class="en">WORKS</p>
+                <p class="en">BANNER</p>
+            </div>
+
+            <div class="sp_btn"><span></span></div>
+            <div class="sp_menu">
+                <div>
+                    <div class="menu_portfolioname">
+                        <p class="en">THANKS TO COMING. THIS IS THE <span>KAORI’S PORTFORIO</span>.THANKS TO COMING.
+                            THIS IS THE
+                            <span>KAORI’S PORTFORIO</span>.
+                        </p>
+                        <p class="en">THANKS TO COMING. THIS IS THE <span>KAORI’S PORTFORIO</span>.THANKS TO COMING.
+                            THIS IS THE
+                            <span>KAORI’S PORTFORIO</span>.
+                        </p>
+                    </div>
+                    <div class="box">
+                        <nav class="sp_nav">
+                            <ul class="sp-nav_list">
+                                <li class="en sp-nav_listitem current"><a href="./index.html">TOP</a></li>
+                                <li class="en sp-nav_listitem"><a href="./about.html">ABOUT ME</a></li>
+                                <li class="en sp-nav_listitem"><a href="./works_hp.html">HP<span>WORKS</span></a></li>
+                                <li class="en sp-nav_listitem"><a href="./works_lp.html">LP<span>WORKS</span></a></li>
+                                <li class="en sp-nav_listitem"><a href="./works_bn.html">BANNER<span>WORKS</span></a>
+                                </li>
+                                <li class="en sp-nav_listitem"><a href="./contact.html">CONTACT</a></li>
+                                <li class="sp-nav_iconlist">
+                                    <ul class="sp-icon">
+                                        <li class="en sp-icon_txt">SNS</li>
+                                        <li class="en sp-icon_x"><a href="https://x.com/rin_de_sign"><img
+                                                    src="./images/logo-black.png" alt="Xのアイコン"></a></li>
+                                        <li class="en sp-icon_insta"><a
+                                                href="https://www.instagram.com/rin_de_sing/"><img
+                                                    src="./images/Instagram_Glyph_Black.svg" alt="Instagramのアイコン"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </nav>
+                        <div class="triangle_top"></div>
+                        <div class="triangle_bottom"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="fade-effect"></div>
+        </div>
+    </header>
+
+    <!-- 左固定アニメーション -->
+
+    <div class="top_portfolioname">
+        <p class="en">THANKS TO COMING. THIS IS THE <span>KAORI’S PORTFORIO</span>.THANKS TO COMING. THIS IS THE
+            <span>KAORI’S PORTFORIO</span>.
+        </p>
+        <p class="en">THANKS TO COMING. THIS IS THE <span>KAORI’S PORTFORIO</span>.THANKS TO COMING.
+            THIS IS THE
+            <span>KAORI’S PORTFORIO</span>.
+        </p>
+    </div>
+
+    <!-- コピーライト -->
+
+    <div class="copy">
+        <p> <small>&copy; 2024 KAORI'S DESIGN</small>
+        </p>
+    </div>
+
+    <!-- 背景 -->
+
+    <div class="bg"></div>
+
+    <main data-scroll-container>
+
+        <!-- PC版 -->
+
+        <section data-scroll-section class="scroll_section">
+            <div class="pc_top wrapper section-inner">
+                <div class="container">
+                    <div class="scrolldown2"><span>SCROLL</span></div>
+                    <div class="ttl">
+                        <h1>表参道スパイス研究所様　広告用バナー</h1>
+                        <p>BANNER</p>
+                    </div>
+                    <div class="img">
+                        <div class="img_pc"> <img src="./images/bn_supaisukennkyuujyo_1.jpg">
+                        </div>
+                        <!-- <div class="img_sp"> <img src="./images/hp_cafe_sp@2x.png">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SP版 -->
+
+        <section data-scroll-section class="scroll_section second_section">
+            <div class="sp_container section-inner">
+                <div class="inner">
+                    <div class="sp_top">
+                        <div class="container fixed-container">
+                            <div class="scrolldown2"><span>SCROLL</span></div>
+
+                            <!-- <div class="page_ttl">
+                                <p class="en">WORKS</p>
+                                <p class="en">HP</p>
+                            </div> -->
+                            <div class="img">
+                                <div class="img_pc"> <img src="./images/bn_supaisukennkyuujyo_1.jpg">
+                                </div>
+                                <!-- <div class="img_sp"> <img src="./images/hp_cafe_sp@2x.png">
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PC、SP共通 -->
+
+                    <div class="contents wrapper bottom-txt">
+                        <div class="sp_ttl">
+                            <h1>表参道スパイス研究所様　広告用バナー</h1>
+                        </div>
+                        <div class="list_left">
+                            <div class="list_row">
+                                <ul>
+                                    <li class="list_ttl">制作期間</li>
+                                    <li class="list_txt">２日</li>
+                                </ul>
+                            </div>
+                            <div class="list_row">
+                                <ul>
+                                    <li class="list_ttl">担当範囲</li>
+                                    <li class="list_txt">Webデザイン、コーディング（HTML・CSS）</li>
+                                </ul>
+                            </div>
+                            <div class="list_row">
+                                <ul>
+                                    <li class="list_ttl">使用ツール</li>
+                                    <li class="list_txt">Adobe Illustrator・Adobe photoshop</li>
+                                </ul>
+                            </div>
+                            <div class="list_row">
+                                <ul>
+                                    <li class="list_ttl">ターゲット</li>
+                                    <li class="list_txt">50〜60代の女性</li>
+                                </ul>
+                            </div>
+                            <div class="list_row">
+                                <ul>
+                                    <li class="list_ttl">コンセプト</li>
+                                    <li class="list_txt">ナチュラル、おしゃれ</li>
+                                </ul>
+                            </div>
+                            <div class="list_row">
+                                <ul>
+                                    <li class="list_ttl">目的・課題</li>
+                                    <li class="list_txt">ー</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="point">
+                            <h2>制作ポイント</h2>
+                            <p>訴求ポイントは「簡単」に作ることができるところ。<br>
+                                「簡単」というだけでは消費者に正しく伝わらないため、具体的に「水・肉・トマト缶だけ」という文言を目立たせ、パッと見ただけでもイメージが湧きやすいように料理画像も併用した。
+                                <br><br>
+                                またターゲット層に合わせて、最低限の文字数とし、視認性に配慮した。
+                            </p>
+                            <p>訴求ポイントは「簡単」に作ることができるところ。<br>
+                                「簡単」というだけでは消費者に正しく伝わらないため、具体的に「水・肉・トマト缶だけ」という文言を目立たせ、パッと見ただけでもイメージが湧きやすいように料理画像も併用した。
+                                <br><br>
+                                またターゲット層に合わせて、最低限の文字数とし、視認性に配慮した。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- リンク -->
+
+        <section data-scroll-section class="scroll_section">
+            <div class="pc_all section-inner">
+                <div class="wrapper">
+                    <a href="">
+                        <div class="btn">
+                            <p class="en">CONTACT</p>
+                            <img src="./images/mail.svg">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SP版 ALL -->
+
+        <!-- <section data-scroll-section class="scroll_section forth_section verticalscrolling">
+            <div class="sp_all sliders_wrapper section-inner">
+                <div class="sp_allpage">
+                    <p class="en slide">ALL PAGES</p>
+                    <div class="images_top slide">
+                        <img src="./images/hp_cafe_all_1.jpg" alt="">
+                    </div>
+                    <div class="images slide">
+                        <div class="images_left">
+                            <div>
+                                <img src="./images/hp_cafe_all_2.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./images/hp_cafe_all_3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="images_right">
+                            <div>
+                                <img src="./images/hp_cafe_all_4.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./images/hp_cafe_all_5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper slide">
+                        <a href="">
+                            <div class="btn">
+                                <p class="en">CONTACT</p>
+                                <img src="./images/mail.svg">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+    </main>
+
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+    "></script>
+    <script>
+        (() => {
+            document.addEventListener('DOMContentLoaded', () => {
+                // 下一文追加
+                gsap.registerPlugin(ScrollTrigger);
+
+                const scroll = new LocomotiveScroll({
+                    el: document.querySelector('[data-scroll-container]'),
+                    direction: 'horizontal',
+                    smooth: true,
+                    tablet: {
+                        direction: 'horizontal',
+                        smooth: true,
+
+                    },
+                    smartphone: {
+                        direction: 'horizontal',
+                        smooth: true,
+
+                    }
+
+                })
+
+
+
+
+
+
+
+
+                // ここから追加
+
+                // scroll.on("scroll", ScrollTrigger.update);//  scrollがスクロールされた時にスクロールトリガーと更新する（スクロール位置に基づいてアニメーションを更新する）
+
+                // ScrollTrigger.scrollerProxy('[data-scroll-container]', {//  スクロールトリガーで以下のプロキシを使用する（scrollがonになるとLocomotivescrollがスクロール制御し、elで指定した部分で調整を行うので、そのプロキシをスクロールトリガーでも使用する
+                //     scrollLeft(value) {//  要素の1番左からのスクロール位置(value)を取得する
+                //         return arguments.length ? scroll.scrollTo(value, 0, 0) : scroll.scroll.instance.scroll.x;//  argument.lengthがtrue(1以上で「ある」)場合、スクロール位置を設定、false(0で「ない」)場合、現在のスクロール位置を取得する
+                //     },
+                //     getBoundingClientRect() {
+                //         return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight }
+                //     },
+                //     pinType: document.querySelector('[data-scroll-container]').style.transform ? "transform" : "fixed"
+                // })
+
+
+                // const sections = gsap.utils.toArray('section')//  全てのsection要素を配列に変換してsectionsに代入する
+
+                // sections.forEach(function (section) {//  配列内の各section要素に対して以下の処理を行う
+
+                //     const inner = section.classList.contains('.second_section') ? section.querySelector('.bottom-txt') : section.querySelector('.section-inner');
+                //     //.second_section(固定要素のあるセクションのクラス名)を持つセクションの場合.bottom-txt(固定要素のセクション内のスクロール部分のクラス名)を、持たない場合は.section-innerを「inner」に代入する
+                //     console.log('inner')
+                // if (!Section.classList.contains('verticalscrolling')) {//  垂直方向スクロールでない(水平＝横スクロール)セクションの場合
+
+                //     scrollTrigger.create({//スクロールトリガーを作成する
+
+                //         scroller: '[data-scroll-container]',//スクロールコンテナとして全体を指定する
+                //         trigger: section,//トリガー要素としてセクションを指定する
+                //         start: section.scrollWidth <= window.innerWidth ? 'top top' : 'bottom bottom',//ウインドウ幅よりセクション幅が小さいときは左端を、セクション幅が大きい時ははみ出るので右端を開始地点とする
+                //         // start: 'top top',
+                //         end: '+=100%',//  セクション開始位置から100％分のスクロール距離
+                //         pin: inner,//.section-innerを代入する
+                //         pinSpacing: false,
+                //         pinType: 'transform',
+                //         markers: true
+                //     })
+
+                // } else {//  垂直方向スクロールセクションの場合（＝section自体は横スクロールで、その中のコンテンツsp_allpageのみ縦スクロール）
+                //     const verticalscroll = section.querySelector('sp_allpage');
+
+                //     scrollTrigger.create({
+
+                //         scroller: '[data-scroll-container]',
+                //         trigger: section,
+                //         direction: vertical,
+                //         start: 'center center',
+                //         end: () => `+=${section.scrollHight + window.innerWidth}`,
+                //         pin: inner,//.section-innerを代入する
+                //         pinSpacing: true,
+                //         pinType: 'transform',
+                //         anticipatePin: 1,
+                //         markers: true
+                //     })
+
+                //     gsap.to(verticalscroll, {
+
+                //         y: () => `${-(section.scrollHight - document.documentElement.clientHeigth)}px`,
+
+                //         ease: 'none',
+
+                //         scrollTrigger: {
+
+                //             trigger: verticalscroll,
+                //             scroller: '[data-scroll-container]',
+                //             start: 'center center',
+                //             // start: 'top top',
+                //             end: () => `+=${section.scrollHeight}`,
+                //             // end: () => "+=" + document.querySelector(".data-scroll-section").offsetHeight,
+                //             scurub: true,
+                //             markers: true
+                //         }
+                //     });
+                // }
+                // })
+                // const timeline = gsap.timeline({
+
+                //     scrollTrigger: {
+
+                //         trigger: '.sp_top ',//固定するもの
+                //         scroller: '[data-scroll-container]',
+                //         scrub: true,
+                //         // start: 'left left',
+                //         start: 'top top',// セクションのtop(1つ目、セクションの上から50pxだとtop=+50になる)がウインドウのtop(2つ目)に来た時
+                //         // endTrigger: '.second_section .section-inner',
+                //         endTrigger: '.bottom-txt',
+                //         // end: 'right right',
+                //         end: 'bottom bottom',
+                //         anticipatePin: 1,
+                //         pin: true,
+                //         pinSpacing: false,
+                //         pinType: 'transform',
+                //         markers: true
+                //     }
+                // });
+
+                // ScrollTrigger.addEventListener("refresh", () => Scroll.update());
+
+                ScrollTrigger.refresh();
+
+
+
+
+                // const container = document.querySelector('.fixed-container')
+                // const bottomText = document.querySelector('.bottom-txt')
+                // const bottomTextRight = bottomText.getBoundingClientRect().right
+                // console.log(container)
+                // console.log(bottomText)
+                // console.log(bottomTextRight)
+
+
+
+
+                const bg = document.querySelector('.bg')
+                const secondSection = document.querySelector('.second_section')
+                const secondSectionX = secondSection.getBoundingClientRect().x
+                // console.log(secondSectionX)
+                scroll.on('scroll', function (event) {
+                    const scrollX = event.scroll.x
+                    // console.log(scrollX)
+                    fadeAnime();/* アニメーション用の関数を呼ぶ*/
+
+                    // console.log(scrollX)
+                    if (scrollX <= secondSectionX) {
+                        const opacity = 1 - (scrollX / secondSectionX)
+                        bg.style.opacity = opacity
+                    };
+
+                    if (scrollX <= bottomTextRight) {
+                        // container.style.position = fixed
+                        container.classList.add('fixed')
+                    }
+
+
+
+
+                })
+
+
+                // const container = document.querySelector('.forth_section')
+                // const slides = document.querySelectorAll('.slide')
+                // const containerHeight = container.offsetHeight;
+                // gsap.to(slides, {
+                //     yPercent: -110 * (slides.length - 1),
+                //     ease: "none",
+                //     scrollTrigger: {
+                //         // start: 'top top'
+                //         trigger: container,
+                //         pin: true,
+                //         scurub: 1,
+                //         end: () => '+= ${ containerHeight }',
+                //         anticipatePin: 1,
+                //         invalidateOnRefresh: true
+                //     }
+                // })
+
+
+                // PC版のALLPAGESが右からフェードインする
+
+                // 動きのきっかけとなるアニメーションの名前を定義
+                function fadeAnime() {
+
+                    //ふわっと動くきっかけのクラス名と動きのクラス名の設定
+                    $('.fadeInTrigger').each(function () { //fadeInUpTriggerというクラス名が
+                        var elemPos = $(this).offset().left - 50; //要素より、50px左の
+                        // console.log(elemPos)
+                        var scroll = $(window).scrollLeft();
+                        var windowWidth = $(window).width();
+                        if (scroll >= elemPos - windowWidth) {
+                            $(this).addClass('fadeIn');
+                            // 画面内に入ったらfadeInというクラス名を追記
+                        } else {
+                            $(this).removeClass('fadeIn');
+                            // 画面外に出たらfadeInというクラス名を外す
+                        }
+                    });
+                }
+                // 画面をスクロールをしたら動かしたい場合の記述
+                $(window).scroll(function () {
+                    fadeAnime();/* アニメーション用の関数を呼ぶ*/
+                });// ここまで画面をスクロールをしたら動かしたい場合の記述
+
+
+
+
+
+
+
+
+
+
+
+            })
+        })()
+
+    </script>
+    <script>
+        // $(function () {
+        //     $('.sp_btn').on('click', function () {
+        //         $('.sp_menu').fadeToggle();
+        //         $('.sp_btn').toggleClass('open');
+        //     })
+        // });
+
+
+        // SP版メニュー
+
+        $(function () {
+            const $effect = $('.fade-effect');
+            const $menu = $('.sp_menu');
+            $effect.hide();
+            $('.sp_btn').on('click', function () {
+
+                $('.sp_btn').toggleClass('open');
+
+                if ($menu.is(':visible')) {
+                    $effect.addClass('show');
+                    $effect.show()
+                    setTimeout(function () {
+                        $effect.removeClass('show');
+                        $menu.hide();
+                        setTimeout(function () {
+                            $effect.hide()
+                        }, 200)
+                    }, 500)
+                } else {
+                    $effect.addClass('show');
+                    $effect.show()
+
+                    setTimeout(function () {
+                        $effect.removeClass('show');
+                        $menu.show();
+                        setTimeout(function () {
+                            $effect.hide()
+                        }, 200)
+
+                    }, 500)
+                }
+            })
+        });
+
+
+    </script>
+    <script>
+        $(function () {
+            if (window.matchMedia("(max-width: 768px)").matches) {
+
+
+                $('sp_container').toggleClass('active');
+                $('.contents').toggleClass('wrapper');
+                $('inner').toggleClass('wrapper');
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>

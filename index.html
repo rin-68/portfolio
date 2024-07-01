@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaori's Portfolio</title>
+    <link href="
+    https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+    " rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'ayw6ybt',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+
+<body>
+
+    <!-- ローディング画面 -->
+
+    <div class="loading_animation">
+        <strong class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </strong>
+    </div>
+
+    <!-- 右固定ナビゲーション -->
+
+    <header>
+        <div class="header">
+            <div class="wrapper">
+                <nav class="pc_nav">
+                    <ul class="pc-nav_list">
+                        <li class="en here"><a href="./index.html">TOP</a></li>
+                        <li class="en"><a href="./about.html">ABOUT ME</a></li>
+                        <li class="en"><a href="#contact">CONTACT</a></li>
+                        <li>
+                            <ul class="icon">
+                                <li>
+                                    <div class="x">
+                                        <a href="https://x.com/rin_de_sign"> <img src="./images/logo-black.png"
+                                                alt="Xのアイコン">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list-insta">
+                                    <div class="insta">
+                                        <a href="https://www.instagram.com/rin_de_sing/"> <img
+                                                src="./images/Instagram_Glyph_Black.svg" alt="Instagramのアイコン">
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="line_vertical"></div>
+                    <ul class="pc-nav_list">
+                        <li class="en"><a href="./works_hp.html">HP</a></li>
+                        <li class="en"><a href="./works_lp.html">LP</a></li>
+                        <li class="en"><a href="./works_bn.html">BANNER</a></li>
+                        <li class="en not_btn">WORKS</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sp_btn"><span></span></div>
+            <div class="sp_menu">
+                <div>
+                    <div class="menu_portfolioname">
+                        <p class="en">THANKS TO COMING. THIS IS THE <span>KAORI’S PORTFORIO</span>.THANKS TO COMING.
+                            THIS IS THE
+                            <span>KAORI’S PORTFORIO</span>.
+                        </p>
+                        <p class="en">THANKS TO COMING. THIS IS THE <span>KAORI’S PORTFORIO</span>.THANKS TO COMING.
+                            THIS IS THE
+                            <span>KAORI’S PORTFORIO</span>.
+                        </p>
+                    </div>
+                    <div class="box">
+                        <nav class="sp_nav">
+                            <ul class="sp-nav_list">
+                                <li class="en sp-nav_listitem current"><a href="./index.html">TOP</a></li>
+                                <li class="en sp-nav_listitem"><a href="./about.html">ABOUT ME</a></li>
+                                <li class="en sp-nav_listitem"><a href="./works_hp.html">HP<span>WORKS</span></a></li>
+                                <li class="en sp-nav_listitem"><a href="./works_lp.html">LP<span>WORKS</span></a></li>
+                                <li class="en sp-nav_listitem"><a href="./works_bn.html">BANNER<span>WORKS</span></a>
+                                </li>
+                                <li class="en sp-nav_listitem"><a href="./contact.html">CONTACT</a></li>
+                                <li class="sp-nav_iconlist">
+                                    <ul class="sp-icon">
+                                        <li class="en sp-icon_txt">SNS</li>
+                                        <li class="en sp-icon_x"><a href="https://x.com/rin_de_sign"><img
+                                                    src="./images/logo-black.png" alt="Xのアイコン"></a></li>
+                                        <li class="en sp-icon_insta"><a
+                                                href="https://www.instagram.com/rin_de_sing/"><img
+                                                    src="./images/Instagram_Glyph_Black.svg" alt="Instagramのアイコン"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </nav>
+                        <div class="triangle_top"></div>
+                        <div class="triangle_bottom"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="fade-effect"></div>
+        </div>
+    </header>
+
+    <!-- 左固定アニメーション -->
+
+    <div class="top_portfolioname">
+        <p class="en">THANKS TO COMING. THIS IS THE <span>KAORI’S PORTFORIO</span>.THANKS TO COMING. THIS IS THE
+            <span>KAORI’S PORTFORIO</span>.
+        </p>
+        <p class="en">THANKS TO COMING. THIS IS THE <span>KAORI’S PORTFORIO</span>.THANKS TO COMING.
+            THIS IS THE
+            <span>KAORI’S PORTFORIO</span>.
+        </p>
+    </div>
+
+    <!-- コピーライト -->
+
+    <div class="copy pc-copy">
+        <p> <small>&copy; 2024 KAORI'S DESIGN</small>
+        </p>
+    </div>
+
+    <!-- 背景 -->
+
+    <div class="bg"></div>
+
+    <main data-scroll-container>
+
+        <!-- メインビジュアル -->
+
+        <section data-scroll-section class="scroll_section first_section">
+            <div class="fv">
+                <div class="wrapper">
+                    <p>あなたの想いを、開花させる。</p>
+                    <div class="fv_line"></div>
+                    <div class="sp_fv_line_top"></div>
+                    <div class="sp_fv_line_bottom"><span class="en">SCROLL</span></div>
+                    <div>
+                        <h1>KAORI'S DESIGN</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- アバウト -->
+
+        <section data-scroll-section class="scroll_section second_section">
+            <div class="about">
+                <div class="wrapper">
+                    <div class="top_contents">
+
+                        <div class="ttl">
+                            <h2 class="eachTextAnime">わたしのこと</h2>
+                            <p class="cursive second_cursive eachTextAnime">About<br>me</p>
+                            <div class="erase"></div>
+                            <div class="about_line"></div>
+                        </div>
+                        <div class="about_content">
+                            <div class="img">
+                                <img src="./images/profile_square@2x-80.jpg" alt="プロフィール写真">
+                            </div>
+                            <div class="sp_img">
+                                <img src="./images/flower001.png" alt="">
+                            </div>
+                            <div>
+                                <div class="txt_bg">
+                                    <div>
+                                        <p class="txt"><span class="slide-in leftAnime">
+                                                <span class="slide-in_inner leftAnimeInner">1991年生まれ、大阪府出身。<br>
+                                                    大阪大学卒業後、看護師として就職。<br>
+                                                    2023年9月、2人目育休中にWebデザインを独学で勉強し始め、その後デザスタにて学ぶ。デザインの力で、周りの人たちを笑顔にしたい。</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="./about.html" class="float">
+                                    <div class="btn">
+                                        <p>もっと<br>知りたい</p>
+                                        <div class="arrow_right"></div>
+                                        <div class="arrow_bottom"></div>
+                                        <p class="en">MORE</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ワークス・ホームページ -->
+
+        <section data-scroll-section class="scroll_section third_section">
+            <div class="works">
+                <div class="first_contents">
+                    <div class="wrapper">
+                        <div class="ttl">
+                            <h2 class="eachTextAnime">つくったもの</h2>
+                            <p class="cursive works_cursive eachTextAnime">Works</p>
+                            <div class="erase"></div>
+                            <div class="works_line"></div>
+                        </div>
+                        <div class="hp">
+                            <div class="hp_square">
+                                <h3 class="eachTextAnime">WEB SITE</h3>
+                                <div class="sp_ttl_line"></div>
+                                <div class="hp_img">
+                                    <img src="./images/hp_cafe_FV-80.jpg" alt="WEBSITEのFV画像">
+                                </div>
+                                <a class="hp_link float" href="./works_hp.html">
+                                    <div class="btn">
+                                        <p>もっと<br>知りたい</p>
+                                        <div class="arrow_right"></div>
+                                        <div class="arrow_bottom"></div>
+                                        <p class="en">MORE</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ランディングページ -->
+
+                <div class="second_contents">
+                    <div class="wrapper">
+                        <div class="lp">
+                            <div class="lp_square">
+                                <h3 class="lp_line eachTextAnime">LANDING PAGE</h3>
+                                <div class="sp_ttl_line"></div>
+
+                                <div class="lp_img">
+                                    <img src="./images/lp_usazemi_FV.jpg" alt="LANDINGPAGEのFV画像">
+                                </div>
+                                <a href="./works_lp.html" class="float">
+                                    <div class="btn">
+                                        <p>もっと<br>知りたい</p>
+                                        <div class="arrow_right"></div>
+                                        <div class="arrow_bottom"></div>
+                                        <p class="en">MORE</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- バナー -->
+
+                <div class="third_contents">
+                    <div class="wrapper">
+                        <div class="bn_square">
+                            <h3 class="bn_line eachTextAnime">BANNER</h3>
+                            <div class="sp_ttl_line"></div>
+
+                            <div class="bn_img">
+                                <img src="./images/bn_supaisukennkyuujyo_1.jpg" alt="BANNERのFV画像">
+                            </div>
+                            <a href="./works_bn.html" class="float">
+                                <div class="btn">
+                                    <p>もっと<br>知りたい</p>
+                                    <div class="arrow_right"></div>
+                                    <div class="arrow_bottom"></div>
+                                    <p class="en">MORE</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- コンタクト -->
+
+        <section data-scroll-section class="scroll_section forth_section">
+            <div class="contact" id="contact">
+                <div class="wrapper">
+                    <div class="top_contents">
+                        <div class="ttl">
+                            <h2 class="eachTextAnime">おはなしする</h2>
+                            <p class="cursive contact_cursive eachTextAnime">Contact</p>
+                            <div class="erase"></div>
+                            <div class="contact_line"></div>
+                        </div>
+                        <div class="txt">
+                            <p>ご相談や励ましのお言葉など、<br>
+                                何でもお話できたらと思います。<br>
+                                お気軽にお問い合わせください。<br>
+                                右記フォームより必要事項を記入いただき、<br>
+                                「送信する」を押してください。</p>
+                        </div>
+                        <form
+                            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdQT8L3UAJMfiiDTRGbAAKqm935UD3J8gkRpPijM-KmUQ2-sQ/formResponse"
+                            method="post" target="hidden_iframe" onsubmit="submitted=true;" class="wrapper">
+                            <table class="contact-table">
+                                <tr>
+                                    <th>お名前</th>
+                                    <td>
+                                        <input type="text" name="entry.366340186" placeholder="山田　花子">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>メールアドレス</th>
+                                    <td>
+                                        <input type="email" name="entry.1131966218" placeholder="@">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>お問い合わせ内容</th>
+                                    <td>
+                                        <textarea name="entry.714382665" id=""></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                            <input class="submit float" type="submit" value="送信する">
+
+                        </form>
+                        <div class="copy sp-copy">
+                            <p> <small>&copy; 2024 KAORI'S DESIGN</small>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="
+https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+"></script>
+    <script>
+        (() => {
+            document.addEventListener('DOMContentLoaded', () => {
+                const Locoscroll = new LocomotiveScroll({
+                    el: document.querySelector('[data-scroll-container]'),
+                    direction: 'horizontal',
+                    smooth: true,
+                    tablet: {
+                        direction: 'horizontal',
+                        smooth: true,
+                    },
+                    smartphone: {
+                        direction: 'horizontal',
+                        smooth: true,
+                    }
+                })
+
+
+                // ＝＝＝＝文字アニメーション（流れるテキスト）＝＝＝＝
+
+
+                function slideText(scrollX) { //引数（呼び出される時に渡してあげるもの）にして、「背景」のLocoscrollがスクロールした時にscrollXを呼び出して実行させる
+                    // scrollX = scrollX ?? 0 //スクロールXがもしなかった（０の）時 → slideText(0)と同義のため削除
+                    const leftAnimes = document.querySelectorAll('.leftAnime') //Allで複数になった場合は配列として
+                    leftAnimes.forEach((leftAnime) => { //受け取ったleftAnimes１つ１つ取り出して（これをleftAnimeに入れている）以下を実行する
+                        const leftAnimeX = leftAnime.getBoundingClientRect().x + (leftAnime.clientWidth / 2) //動かしたい要素の中心までのx距離
+                        const leftAnimeInner = document.querySelectorAll('.leftAnimeInner')
+                        const windowWidth = window.innerWidth
+                        const scrollWidth = scrollX + windowWidth //画面全体の右端の位置
+                        if (scrollWidth >= leftAnimeX) {
+                            leftAnime.classList.add('slideAnimeLeftRight')
+                            leftAnime.querySelector('.leftAnimeInner').classList.add('slideAnimeRightLeft') //子要素は親要素のアニメーションに影響されないように逆の指定をし元の位置をキープするアニメーションをおこなう
+                        }
+                    })
+                }
+
+                // slideText(0) //下のslideText(scrollX)ではスクロールした後にしか動かないので、その前にスクロール０（画面が表示された時）に動くように指定
+
+
+
+                // ＝＝＝＝背景を２つ目のセクションに移動したら消す＝＝＝＝
+
+
+                const bg = document.querySelector('.bg')
+                const secondSection = document.querySelector('.second_section')
+                const secondSectionX = secondSection.getBoundingClientRect().x
+                // console.log(secondSectionX)
+                Locoscroll.on('scroll', function (event) {
+                    const scrollX = event.scroll.x
+                    // console.log(scrollX)
+                    if (scrollX <= secondSectionX) {
+                        const opacity = 1 - (scrollX / secondSectionX)
+                        bg.style.opacity = opacity
+                    }
+                    slideText(scrollX) //「流れるテキスト」のアニメーションがスクロールされたら実行されるように指定
+
+                    EachTextAnimeControl()
+                })
+
+
+
+                // ＝＝＝＝セクションを繋ぐ直線を計算して表示する＝＝＝＝
+
+
+                function calculate() {
+                    // ライン
+                    const aboutLine = document.querySelector('.about_line')
+                    const worksLine = document.querySelector('.works_line')
+                    const lpLine = document.querySelector('.lp_line')
+                    const bnLine = document.querySelector('.bn_line')
+                    const contactLine = document.querySelector('.contact_line')
+                    // 左側
+                    const h1 = document.querySelector('h1')
+                    const lineTop = document.querySelector('.sp_fv_line_top')
+                    console.log(lineTop)
+                    const secondSection = document.querySelector('.second_section')
+                    const firstContents = document.querySelector('.first_contents')
+                    const secondContents = document.querySelector('.second_contents')
+                    const thirdContents = document.querySelector('.third_contents')
+                    // 左側距離（右端）
+                    const h1X = h1.getBoundingClientRect().right
+                    const lineTopX = lineTop.getBoundingClientRect().x
+                    console.log(lineTopX)
+                    const secondSectionX = secondSection.getBoundingClientRect().right
+                    const firstContentsX = firstContents.getBoundingClientRect().right
+                    const secondContentsX = secondContents.getBoundingClientRect().right
+                    const thirdContentsX = thirdContents.getBoundingClientRect().right
+                    // 右側
+                    const secondCursive = document.querySelector('.second_cursive')
+                    const worksCursive = document.querySelector('.works_cursive')
+                    const contactCursive = document.querySelector('.contact_cursive')
+                    // 右側距離（左端）
+                    const secondCursiveX = secondCursive.getBoundingClientRect().x
+                    console.log(secondCursiveX)
+                    const worksCursiveX = worksCursive.getBoundingClientRect().x
+                    const lpLineX = lpLine.getBoundingClientRect().right
+                    const bnLineX = bnLine.getBoundingClientRect().right
+                    const contactCursiveX = contactCursive.getBoundingClientRect().x
+
+                    if (window.matchMedia('(min-width:768px)').matches) {
+                        /**画面幅が768px以上のときの処理 */
+                        var lineWidthAbout = secondCursiveX - h1X - 15
+                        // console.log(lineWidthAbout)
+                        const lineWidthWorks = worksCursiveX - secondSectionX + 82
+                        var lineWidthLp = lpLineX - firstContentsX + 93
+                        const lineWidthBn = bnLineX - secondContentsX + 82
+                        const lineWidthContact = contactCursiveX - thirdContentsX + 82
+                        // ラインのCSS変更
+                        aboutLine.style.width = lineWidthAbout + 'px'
+                        worksLine.style.width = lineWidthWorks + 'px'
+                        lpLine.style.width = lineWidthLp + 'px'
+                        bnLine.style.width = lineWidthBn + 'px'
+                        contactLine.style.width = lineWidthContact + 'px'
+                    } else {
+                        /**画面幅が768px以下のときの処理 */
+                        var lineWidthAbout = secondCursiveX - lineTopX
+                        const lineWidthWorks = worksCursiveX - secondSectionX + 140
+                        var lineWidthLp = lpLineX - firstContentsX + 70
+                        const lineWidthBn = bnLineX - secondContentsX + 70
+                        const lineWidthContact = contactCursiveX - thirdContentsX + 155
+                        console.log(lineWidthAbout)
+                        // ラインのCSS変更
+                        aboutLine.style.width = lineWidthAbout + 'px'
+                        worksLine.style.width = lineWidthWorks + 'px'
+                        lpLine.style.width = lineWidthLp + 'px'
+                        bnLine.style.width = lineWidthBn + 'px'
+                        contactLine.style.width = lineWidthContact + 'px'
+                    }
+
+                }
+                calculate()
+                window.addEventListener('resize', () => {
+                    calculate()
+                })
+
+
+
+                // ＝＝＝＝CONTACTに飛ばす＝＝＝＝
+
+                const anchorLinks = document.querySelectorAll('a[href^=\\#]:not([href$=\\#])');
+
+                anchorLinks.forEach((anchorLink) => {
+                    let link = anchorLink.getAttribute('href');
+                    let target = document.querySelector(link);
+
+                    anchorLink.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        Locoscroll.scrollTo(target);
+                    })
+                })
+
+
+
+
+                // ＝＝＝＝文字アニメーション 一文字ずつ現れる＝＝＝＝
+
+
+                // eachTextAnimeにappeartextというクラス名を付ける定義
+                function EachTextAnimeControl() {
+                    $('.eachTextAnime').each(function () {
+                        var elemPos = $(this).offset().left - 50;
+                        var scroll = $(window).scrollLeft();
+                        var windowWidth = $(window).width();
+                        if (scroll >= elemPos - windowWidth) {
+                            $(this).addClass("appeartext");
+
+                        } else {
+                            $(this).removeClass("appeartext");
+                        }
+                    });
+                }
+                $(window).scroll(function () {
+                    console.log('aaa')
+                    EachTextAnimeControl();/* アニメーション用の関数を呼ぶ*/
+                });// ここまで画面をスクロールをしたら動かしたい場合の記述
+
+                // 画面が読み込まれたらすぐに動かしたい場合の記述
+                $(window).on('load', function () {
+                    //spanタグを追加する
+                    var element = $(".eachTextAnime");
+                    element.each(function () {
+                        var text = $(this).text();
+                        var textbox = "";
+                        text.split('').forEach(function (t, i) {
+                            if (t !== " ") {
+                                if (i < 10) {
+                                    textbox += '<span style="animation-delay:.' + i + 's;">' + t + '</span>';
+                                } else {
+                                    var n = i / 10;
+                                    textbox += '<span style="animation-delay:' + n + 's;">' + t + '</span>';
+                                }
+                            } else {
+                                textbox += t;
+                            }
+                        });
+                        $(this).html(textbox);
+                    });
+                    EachTextAnimeControl();/* アニメーション用の関数を呼ぶ*/
+                });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+
+
+
+            });
+
+        })()
+
+
+    </script>
+
+    <script>
+
+        $(function () {
+            function end_loading() {
+                // フェードアウトする時間
+                $('.loading_animation').fadeOut(2000);
+            }
+            $(window).on('load', function () {
+                setTimeout(function () {
+                    end_loading();
+                    // ローディング画面を表示する時間
+                }, 3000)
+            })
+        })
+
+
+
+        // SP版メニュー
+
+        $(function () {
+            const $effect = $('.fade-effect');
+            const $menu = $('.sp_menu');
+            $effect.hide();
+            $('.sp_btn').on('click', function () {
+
+                $('.sp_btn').toggleClass('open');
+
+                if ($menu.is(':visible')) {
+                    $effect.addClass('show');
+                    $effect.show()
+                    setTimeout(function () {
+                        $effect.removeClass('show');
+                        $menu.hide();
+                        setTimeout(function () {
+                            $effect.hide()
+                        }, 200)
+                    }, 500)
+                } else {
+                    $effect.addClass('show');
+                    $effect.show()
+
+                    setTimeout(function () {
+                        $effect.removeClass('show');
+                        $menu.show();
+                        setTimeout(function () {
+                            $effect.hide()
+                        }, 200)
+
+                    }, 500)
+                }
+            })
+        });
+
+
+
+        // ＝＝＝＝文字アニメーション 一文字ずつ現れる＝＝＝＝
+        function EachTextAnimeControl() {
+            $('.eachTextAnime').each(function () {
+                var elemPos = $(this).offset().left - 50;
+                var scroll = $(window).scrollLeft();
+                var windowWidth = $(window).width();
+                if (scroll >= elemPos - windowWidth) {
+                    $(this).addClass("appeartext");
+
+                } else {
+                    $(this).removeClass("appeartext");
+                }
+            });
+        }
+
+
+        $(window).scroll(function () {
+            console.log('aaa')
+            EachTextAnimeControl();/* アニメーション用の関数を呼ぶ*/
+        });// ここまで画面をスクロールをしたら動かしたい場合の記述
+
+        // 画面が読み込まれたらすぐに動かしたい場合の記述
+        $(window).on('load', function () {
+            //spanタグを追加する
+            var element = $(".eachTextAnime");
+            element.each(function () {
+                var text = $(this).text();
+                var textbox = "";
+                text.split('').forEach(function (t, i) {
+                    if (t !== " ") {
+                        if (i < 10) {
+                            textbox += '<span style="animation-delay:.' + i + 's;">' + t + '</span>';
+                        } else {
+                            var n = i / 10;
+                            textbox += '<span style="animation-delay:' + n + 's;">' + t + '</span>';
+                        }
+
+                    } else {
+                        textbox += t;
+                    }
+                });
+                $(this).html(textbox);
+            });
+
+            EachTextAnimeControl();/* アニメーション用の関数を呼ぶ*/
+        });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+
+    </script>
+    <script type="text/javascript">
+        let submitted = false;
+    </script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+        onload="if(submitted){window.location='./thanks.html';}"></iframe>
+
+</body>
+
+</html>

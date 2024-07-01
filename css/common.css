@@ -1,0 +1,782 @@
+@charset "UTF-8";
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/bg_1-80.jpg);
+  background-repeat: no-repeat;
+  transition: 0.5s ease;
+  background-size: cover;
+  opacity: 1;
+}
+
+body {
+  width: 100vw;
+  background-color: #fffcf5;
+  overflow-y: hidden;
+}
+
+main {
+  overflow: hidden !important;
+  scroll-snap-type: x mandatory;
+  overflow: scroll;
+  background-color: #fffcf5;
+  height: 100%;
+}
+
+section {
+  scroll-snap-align: center;
+}
+
+.wrapper {
+  height: 400px;
+}
+
+.scroll_section {
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    height: 650px;
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーー 
+フォント
+ーーーーーーーーーーーーーーーーーーーー */
+
+.en {
+  font-family: din-2014, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+}
+
+.here {
+  font-weight: 700;
+  color: #ec6c4e;
+}
+
+.cursive {
+  font-family: adventures-unlimited, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #ec6c4e;
+  text-align: right;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーー 
+左固定アニメーション
+ーーーーーーーーーーーーーーーーーーーー */
+
+.top_portfolioname {
+  width: 4%;
+  height: 100vh;
+  background: #fffcf5;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 9980;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.top_portfolioname span {
+  color: #ec6c4e;
+}
+
+.top_portfolioname p {
+  writing-mode: vertical-rl;
+  margin: 0 auto;
+  animation: loop-animation 80s linear infinite;
+  white-space: nowrap;
+}
+
+.top_portfolioname span {
+  color: #ec6c4e;
+}
+
+@keyframes loop-animation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+/* @keyframes loop-animation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+} */
+
+@media screen and (max-width: 767px) {
+  .top_portfolioname {
+    width: 100vw;
+    height: 45px;
+    top: auto;
+    left: auto;
+    bottom: 0px;
+    right: 0px;
+    z-index: 5000;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .top_portfolioname.open {
+    display: none;
+  }
+
+  .top_portfolioname p {
+    font-size: 12px;
+    writing-mode: horizontal-tb;
+    line-height: 3.75;
+    animation: loop-animation-767 80s linear infinite;
+    white-space: nowrap;
+  }
+
+  @keyframes loop-animation-767 {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーー
+右固定ナビゲーション
+ーーーーーーーーーーーーーーーーーーーー */
+
+.header {
+  display: flex;
+  /* width: 133px; */
+  /* ここが表示崩れの原因 */
+  height: 100%;
+  background: #fffcf5;
+  align-items: center;
+  position: fixed;
+  right: 0px;
+  /* 消したもの② */
+  z-index: 9990;
+}
+
+header .wrapper {
+  writing-mode: vertical-lr;
+  margin: 0 auto;
+}
+
+.pc_nav {
+  background: #fffcf5;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.pc_nav ul {
+  width: 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pc_nav li {
+  font-size: 16px;
+}
+
+/* .px_nav .icon {
+  gap: 10px;
+} */
+
+.icon {
+  display: flex;
+  height: 47px;
+}
+
+.list-insta {
+  margin-top: 8px;
+}
+
+.pc_nav .line_vertical {
+  width: 1px;
+  height: 400px;
+  background: #423732;
+}
+
+.not_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 125px;
+  color: #ad9d9a;
+  border-top: 1px solid #423732;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 39px;
+  height: 125px;
+  background: #ad9d9a;
+}
+
+.pc-nav_list li.current a,
+.pc-nav_list li a:hover {
+  color: #53c711;
+}
+
+.x,
+.insta {
+  width: 16px;
+  height: 16px;
+}
+
+.x a,
+.insta a {
+  /* width: 20px; */
+  /* height: 20px; */
+  opacity: 0.7;
+}
+
+.x:hover,
+.insta:hover {
+  transform: translateY(-3px);
+}
+
+.x img,
+.insta img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1336px) {
+  /* .header {
+    width: 10%;
+  } */
+  /* ここが表示崩れの原因 */
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    right: auto;
+  }
+}
+
+.page_ttl {
+  display: none;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーー 
+スマホ版メニュー 
+ーーーーーーーーーーーーーーーーーーーー */
+
+.sp_menu,
+.sp_btn {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .pc_nav,
+  header .wrapper {
+    display: none;
+  }
+
+  .page_ttl {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  /* ーーーーーーーーーーーーーーーーーーーー 
+  ハンバーガーメニュー(ボタン) 
+  ーーーーーーーーーーーーーーーーーーーー */
+
+  .sp_btn {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: #f2917e;
+    cursor: pointer;
+    position: fixed;
+    /* ③absolutelから変更 */
+    bottom: 0px;
+    right: 0px;
+    z-index: 5100;
+  }
+
+  .sp_btn span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    position: relative;
+    top: 16px;
+    left: 8px;
+    transition: 0.3s;
+  }
+
+  .sp_btn span::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: -13px;
+    left: 0px;
+    transition: 0.3s;
+  }
+
+  .sp_btn.open span {
+    top: 22px;
+    transform: rotate(45deg);
+  }
+
+  .sp_btn.open span::after {
+    bottom: 0px;
+    left: 0;
+    transform: rotate(-90deg);
+  }
+
+  /* ーーーーーーーーーーーーーーーーーーーー
+スマホ版メニューの見た目 
+ーーーーーーーーーーーーーーーーーーーー */
+
+  .header.open {
+    display: block;
+    height: 100%;
+    background-color: #fffcf5;
+    /* position: static; */
+    /* 消したもの① */
+  }
+
+  .fade-effect {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fffcf5;
+    opacity: 0;
+    z-index: 999;
+    transition: opacity 0.5s ease;
+  }
+
+  .fade-effect.show {
+    opacity: 1;
+  }
+
+  .sp_menu > div {
+    display: flex;
+  }
+
+  .menu_portfolioname {
+    height: 100vh;
+    writing-mode: vertical-rl;
+    border-right: 1px solid #423732;
+    border-left: 1px solid #423732;
+    transform: rotate(180deg);
+    margin-left: 5%;
+    display: flex;
+    /* overflow: hidden; */
+  }
+
+  .menu_portfolioname p {
+    font-size: 12px;
+    line-height: 4;
+    animation: loop-animation 80s linear infinite;
+    white-space: nowrap;
+  }
+
+  .menu_portfolioname span {
+    color: #ec6c4e;
+  }
+
+  /* .menu_portfolioname p {
+    writing-mode: vertical-rl;
+    margin: 0 auto;
+    animation: loop-animation 80s linear infinite;
+    white-space: nowrap;
+  } */
+
+  @keyframes loop-animation {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+
+  .sp_menu .box {
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .sp_nav {
+    width: 100vw;
+    height: 100%;
+  }
+
+  .sp-nav_list {
+    width: 100%;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 75px;
+    left: 0px;
+  }
+
+  .sp-nav_listitem {
+    font-size: 22px;
+    display: flex;
+    align-items: flex-end;
+    height: 50px;
+    border-bottom: 1px solid #423732;
+    padding-left: 38%;
+    padding-bottom: 0px;
+    position: relative;
+  }
+
+  .sp_nav li span {
+    font-size: 12px;
+    letter-spacing: 0em;
+
+    display: block;
+    position: absolute;
+    right: 22%;
+    bottom: 3px;
+  }
+
+  .sp-nav_iconlist {
+    font-size: 16px;
+    height: 44px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 38%;
+  }
+
+  .sp-icon {
+    display: flex;
+    /* justify-content: flex-start; */
+    gap: 20px;
+    /* bottom: 0; */
+  }
+
+  .sp-icon_txt {
+    font-size: 19px;
+    padding-left: 0;
+  }
+
+  .sp-icon_x {
+    width: 16px;
+    border-bottom: none;
+  }
+
+  .sp-icon_insta {
+    width: 16px;
+    border-bottom: none;
+    padding-left: 0;
+  }
+
+  .sp-icon_x a,
+  .sp-icon_insta a {
+    width: 16px;
+  }
+
+  .sp-icon img {
+    vertical-align: middle;
+  }
+
+  .triangle_top {
+    width: 60%;
+    height: 93%;
+    clip-path: polygon(0 0, 0% 100%, 100% 0%);
+    background-color: #ec6c4e;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .triangle_bottom {
+    width: 59.7%;
+    height: 92.5%;
+    clip-path: polygon(0 0, 0% 100%, 100% 0%);
+    background-color: #fffcf5;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーー
+コピーライト
+ーーーーーーーーーーーーーーーーーーーー */
+.copy {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 6px;
+  z-index: 9970;
+}
+
+@media screen and (max-width: 767px) {
+  .copy {
+    bottom: 51px;
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーー
+SP版 左上文字
+ーーーーーーーーーーーーーーーーーーーー */
+
+.page_ttl {
+  display: flex;
+}
+
+.page_ttl p:nth-of-type(1) {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  line-height: 2.5;
+  color: #fffcf5;
+  width: 70px;
+  height: 30px;
+  background: #f2917e;
+  text-align: center;
+}
+
+.page_ttl p:nth-of-type(2) {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  line-height: 2.5;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーー
+文字アニメーション 一文字ずつ文字が現れる
+ーーーーーーーーーーーーーーーーーーーー*/
+
+.eachTextAnime span {
+  opacity: 0;
+}
+.eachTextAnime.appeartext span {
+  animation: text_anime_on 1s ease-out forwards;
+}
+@keyframes text_anime_on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーー
+ボタンがオンマウスで浮き上がる
+ーーーーーーーーーーーーーーーーーーーー*/
+.float {
+  background: #fff;
+  border: 1px solid #53c711;
+  border-radius: 60px;
+  color: #53c711;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.float:hover {
+  /* top: -3px; */
+  transform: translateY(-3px);
+  box-shadow: 0 1px 5px #a6eb83, 0 0 10px #eaf6e2;
+  border-color: #53c711;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーー
+ボタンがオンマウスで浮き上がる(画像）
+ーーーーーーーーーーーーーーーーーーーー*/
+.floatup {
+  position: relative;
+  top: 0;
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  outline: none;
+  /*アニメーションの設定*/
+  transition: all 0.3s;
+}
+.floatup:hover {
+  /* filter: grayscale(40%); */
+  top: -3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* ーーーーーーーーーーーーーーーーーーーー
+スクロールダウン
+ーーーーーーーーーーーーーーーーーーーー*/
+
+/*スクロールダウン全体の場所*/
+.scrolldown2 {
+  /*描画位置※位置は適宜調整してください*/
+  position: absolute;
+  top: 40%;
+  left: 100px;
+  /* left: 6%; */
+}
+
+/*Scrollテキストの描写*/
+.scrolldown2 span {
+  /*描画位置*/
+  position: absolute;
+  left: 8px;
+  /* left: 210px; */
+  bottom: 7px;
+  /* bottom: 3px; */
+  /*テキストの形状*/
+  color: #ec6c4e;
+  /* color: #423732; */
+  font-size: 12px;
+  /* font-size: 1rem; */
+  letter-spacing: 0.46em;
+  /* letter-spacing: 0.1em; */
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+/* 丸の描写 */
+.scrolldown2:before {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  /* left: -4px; */
+  /*丸の形状*/
+  width: 9px;
+  height: 9px;
+  border: 1px solid #ec6c4e;
+  border-radius: 50%;
+  /* background: #423732; */
+  /*丸の動き1.6秒かけて透過し、永遠にループ*/
+  animation: circlemove 2.6s ease-in-out infinite,
+    cirlemovehide 2.6s ease-out infinite;
+}
+
+/*下からの距離が変化して丸の全体が上から下に動く*/
+@keyframes circlemove {
+  0% {
+    bottom: 90px;
+  }
+  100% {
+    bottom: -5px;
+  }
+}
+
+/*上から下にかけて丸が透過→不透明→透過する*/
+@keyframes cirlemovehide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 線の描写 */
+.scrolldown2:after {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /*線の形状*/
+  width: 1px;
+  /* width: 2px; */
+  /* height: 50px; */
+  height: 100px;
+  background: #ec6c4e;
+}
+/* ーーーーーーーーーーーーーーーーーーーー
+文字アニメーション 流れるテキスト
+ーーーーーーーーーーーーーーーーーーーー */
+
+/*全共通*/
+
+.slide-in {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.slide-in_inner {
+  display: inline-block;
+}
+
+/*左右のアニメーション*/
+.leftAnime {
+  opacity: 0; /*事前に透過0にして消しておく*/
+}
+
+.slideAnimeLeftRight {
+  animation-name: slideTextX100;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  /* opacity: 1; */
+  opacity: 0;
+}
+
+@keyframes slideTextX100 {
+  from {
+    transform: translateX(-100%); /*要素を左の枠外に移動*/
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0); /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+.slideAnimeRightLeft {
+  animation-name: slideTextX-100;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slideTextX-100 {
+  from {
+    transform: translateX(100%); /*要素を右の枠外に移動*/
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0); /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
