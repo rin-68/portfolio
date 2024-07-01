@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.main {
+  height: -webkit-fill-available;
+}
+
 /* ーーーーーーーーーー
 ローディング画面
 ーーーーーーーーーー */
@@ -394,7 +398,7 @@ h1 {
   height: 100%;
   align-items: center;
 
-  height: -webkit-fill-available;
+  /* height: -webkit-fill-available; */
 }
 
 .about > .wrapper {
