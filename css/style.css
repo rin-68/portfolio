@@ -235,6 +235,10 @@ h1 {
   padding-left: 25px;
 }
 
+.sp-fv {
+  display: none;
+}
+
 @media screen and (max-width: 1100px) {
   .fv {
     background-size: 30%;
@@ -255,6 +259,14 @@ h1 {
 }
 
 @media screen and (max-width: 767px) {
+  .pc-fv {
+    display: none;
+  }
+
+  .sp-fv {
+    display: block;
+  }
+
   .fv {
     background-image: none;
   }
