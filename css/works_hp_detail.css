@@ -413,12 +413,13 @@ h2 {
   }
 
   .pc_all .wrapper {
+    height: 400px;
     margin-right: 40px;
   }
 
-  .pc_all a {
+  /* .pc_all a {
     margin-bottom: 90px;
-  }
+  } */
 }
 
 /* ーーーーーーーーーー

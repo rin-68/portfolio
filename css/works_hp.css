@@ -186,6 +186,7 @@
   .sp_container .txt,
   .sp_container .txt_none {
     font-size: 14px;
+    letter-spacing: 0.2em;
     writing-mode: vertical-lr;
     display: flex;
     justify-content: space-between;
@@ -193,6 +194,7 @@
   }
 
   .sp_container .txt_none h2,
+  .sp_container .txt_none p,
   .sp_container .txt_none p {
     color: #d3c4c1;
   }

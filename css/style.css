@@ -276,7 +276,8 @@ h1 {
     border-left: 1px solid #ec6c4e;
     border-bottom: none;
     top: 336px;
-    right: 183px;
+    right: 198%;
+    /* right: 183px; */
   }
 
   .sp_fv_line_top {
@@ -287,7 +288,8 @@ h1 {
     border-left: 1px solid #ec6c4e;
     position: absolute;
     top: 90px;
-    right: 129px;
+    right: 140%;
+    /* right: 129px; */
   }
 
   .sp_fv_line_bottom {
@@ -369,7 +371,8 @@ h1 {
     /* border: 1px solid #ec6c4e; */
     position: absolute;
     top: 168px;
-    right: 176px;
+    right: 190%;
+    /* right: 176px; */
   }
 
   h1 {
