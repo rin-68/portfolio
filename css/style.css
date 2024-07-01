@@ -283,11 +283,13 @@ h1 {
   .sp_fv_line_top {
     display: block;
     width: 55px;
+    /* height: 185px; */
     height: 62px;
     border-top: 1px solid #ec6c4e;
     border-left: 1px solid #ec6c4e;
     position: absolute;
     top: 90px;
+    /* right: 0%; */
     right: 140%;
     /* right: 129px; */
   }

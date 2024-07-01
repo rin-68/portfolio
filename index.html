@@ -23,6 +23,51 @@
                 h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
+
+
+    <style>
+        .fv .wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .fv .fv-top {
+            display: flex;
+        }
+
+        .fv .top-line {
+            margin-top: 90px;
+        }
+
+        .fv .sp_fv_line_top {
+            position: static;
+            width: 97px;
+            margin-left: 10px;
+        }
+
+        .fv h1 {
+            margin-left: 1px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .fv .fv_line {
+            position: static;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .fv p {
+            margin: 0;
+            margin-top: 161px;
+        }
+
+        .fv .sp_fv_line_bottom {
+            position: static;
+            height: 40px;
+            margin-left: 97px;
+        }
+    </style>
 </head>
 
 
@@ -157,6 +202,19 @@
         <section data-scroll-section class="scroll_section first_section">
             <div class="fv">
                 <div class="wrapper">
+                    <div class="fv-top">
+                        <div class="top-line">
+                            <div class="sp_fv_line_top"></div>
+                            <h1>KAORI'S DESIGN</h1>
+                            <div class="fv_line"></div>
+                        </div>
+                        <p>あなたの想いを、開花させる。</p>
+                    </div>
+                    <div class="sp_fv_line_bottom"><span class="en">SCROLL</span></div>
+                    <div>
+                    </div>
+                </div>
+                <!-- <div class="wrapper">
                     <p>あなたの想いを、開花させる。</p>
                     <div class="fv_line"></div>
                     <div class="sp_fv_line_top"></div>
@@ -164,7 +222,7 @@
                     <div>
                         <h1>KAORI'S DESIGN</h1>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
