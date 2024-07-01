@@ -371,6 +371,9 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                     }
                 })
 
+                var vh = window.innerHeight;
+                document.getElementById('box').style.height = vh + 'px';
+
 
                 // ＝＝＝＝文字アニメーション（流れるテキスト）＝＝＝＝
 
@@ -568,7 +571,7 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
     <script>
 
 
-        $('#box').css('height', $(window).height());
+        // $('#box').css('height', $(window).height());
 
         $(function () {
             function end_loading() {
