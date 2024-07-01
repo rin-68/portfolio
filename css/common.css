@@ -13,12 +13,11 @@
 }
 
 /* Avoid Chrome to see Safari hack */
-@supports (-webkit-touch-callout: none) {
+/* @supports (-webkit-touch-callout: none) {
   body {
-    /* The hack for Safari */
     height: -webkit-fill-available;
   }
-}
+} */
 
 body {
   width: 100vw;
@@ -36,11 +35,12 @@ main {
   background-color: #fffcf5;
   height: 100%;
 
-  height: -webkit-fill-available;
+  /* height: -webkit-fill-available; */
 }
 
 section {
   scroll-snap-align: center;
+  height: -webkit-fill-available;
 }
 
 .wrapper {
