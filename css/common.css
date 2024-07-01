@@ -41,6 +41,10 @@ main {
   /* height: -webkit-fill-available; */
 }
 
+header {
+  height: -webkit-fill-available !important;
+}
+
 section.scroll_section {
   scroll-snap-align: center;
   height: -webkit-fill-available !important;
