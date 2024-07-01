@@ -41,9 +41,9 @@ main {
   /* height: -webkit-fill-available; */
 }
 
-section {
+section.scroll_section {
   scroll-snap-align: center;
-  /* height: -webkit-fill-available; */
+  height: -webkit-fill-available !important;
 }
 
 .wrapper {
