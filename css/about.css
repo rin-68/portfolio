@@ -35,7 +35,7 @@
   justify-content: center;
 }
 
-.page_ttl.about {
+.page_ttl {
   display: none;
 }
 
@@ -51,11 +51,11 @@
     width: 86px;
   } */
 
-  .page_ttl.about {
+  .page_ttl {
     display: block;
   }
 
-  .page_ttl.about p:nth-of-type(1) {
+  .page_ttl p:nth-of-type(1) {
     width: 100px;
   }
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IdetaKaori's Portfolio</title>
+    <title>CONTACT | Kaori's Portfolio</title>
     <link href="
     https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
     " rel="stylesheet">
@@ -23,6 +23,22 @@
                 h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
+
+    <style>
+        .page_ttl {
+            display: none;
+        }
+
+        @media screen and (max-width: 767px) {
+            .page_ttl {
+                display: block;
+            }
+
+            .page_ttl p:nth-of-type(1) {
+                width: 100px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -39,7 +55,7 @@
                     <ul class="pc-nav_list">
                         <li class="en "><a href="./index.html">TOP</a></li>
                         <li class="en"><a href="./about.html">ABOUT ME</a></li>
-                        <li class="en"><a href="#contact">CONTACT</a></li>
+                        <li class="en here"><a href="#contact">CONTACT</a></li>
                         <li>
                             <ul class="icon">
                                 <li>
@@ -61,7 +77,7 @@
                     </ul>
                     <div class="line_vertical"></div>
                     <ul class="pc-nav_list">
-                        <li class="en here"><a href="./works_hp.html">HP</a></li>
+                        <li class="en"><a href="./works_hp.html">HP</a></li>
                         <li class="en"><a href="./works_lp.html">LP</a></li>
                         <li class="en"><a href="./works_bn.html">BANNER</a></li>
                         <li class="en not_btn">WORKS</li>
@@ -71,10 +87,10 @@
 
             <!-- SP版 -->
 
-            <!-- <div class="page_ttl hp">
-                <p class="en">WORKS</p>
-                <p class="en">HP</p>
-            </div> -->
+            <div class="page_ttl hp">
+                <p class="en">CONTACT</p>
+                <!-- <p class="en">HP</p> -->
+            </div>
 
             <div class="sp_btn"><span></span></div>
             <div class="sp_menu">
@@ -282,27 +298,34 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
         $(function () {
             const $effect = $('.fade-effect');
             const $menu = $('.sp_menu');
+            $effect.hide();
             $('.sp_btn').on('click', function () {
 
-                // $('.sp_menu').fadeToggle();
-                // $('.sp_menu').toggleClass('active')
                 $('.sp_btn').toggleClass('open');
-                // $('.header').toggleClass('open');
-                // 消したら背景色がなくなる
-                // $('.top_portfolioname').toggleClass('open');
-                // 消したら下の横長が表示されたままになる
+                $('.page_ttl').toggleClass('none')
+
 
                 if ($menu.is(':visible')) {
                     $effect.addClass('show');
+                    $effect.show()
                     setTimeout(function () {
                         $effect.removeClass('show');
                         $menu.hide();
+                        setTimeout(function () {
+                            $effect.hide()
+                        }, 200)
                     }, 500)
                 } else {
                     $effect.addClass('show');
+                    $effect.show()
+
                     setTimeout(function () {
                         $effect.removeClass('show');
                         $menu.show();
+                        setTimeout(function () {
+                            $effect.hide()
+                        }, 200)
+
                     }, 500)
                 }
             })

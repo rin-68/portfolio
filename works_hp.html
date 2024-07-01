@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaori's Portfolio</title>
+    <title>WORKS-HP | Kaori's Portfolio</title>
     <link href="
     https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
     " rel="stylesheet">
@@ -149,8 +149,11 @@
             <div class="pc_container wrapper">
                 <div class="scrolldown2"><span>SCROLL</span></div>
                 <div class="content">
-                    <a href="./works_hp_detail.html" class="img_square floatup">
-                        <img src="./images/hp_cafe_sp_1@2x.png"></a>
+                    <div class="zoomOutText"><a href="./works_hp_detail.html" class="img_square"><span class="mask"><img
+                                    src="./images/hp_cafe_sp_1@2x.png" alt=""><span class="cap en">view
+                                    more</span></span></a></div>
+                    <!-- <a href="./works_hp_detail.html" class="img_square floatup">
+                        <img src="./images/hp_cafe_sp_1@2x.png"></a> -->
                     <p class="ttl">カフェサイト（架空）</p>
                     <div>
                         <p>レスポンシブ</p>
@@ -300,6 +303,8 @@
             $('.sp_btn').on('click', function () {
 
                 $('.sp_btn').toggleClass('open');
+                $('.page_ttl').toggleClass('none')
+
 
                 if ($menu.is(':visible')) {
                     $effect.addClass('show');

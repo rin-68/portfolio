@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaori's Portfolio</title>
+    <title>WORKS-LP | Kaori's Portfolio</title>
     <link href="
     https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
     " rel="stylesheet">
@@ -85,7 +85,7 @@
                         <li class="en "><a href="./works_hp.html">HP</a></li>
                         <li class="en here"><a href="./works_lp.html">LP</a></li>
                         <li class="en"><a href="./works_bn.html">BANNER</a></li>
-                        <li class="en not_btn">WORKS</li>
+                        <li class="back"><a href="./works_lp.html">一覧に戻る</a></li>
                     </ul>
                 </nav>
             </div>
@@ -215,7 +215,7 @@
 
                     <div class="contents wrapper bottom-txt">
                         <div class="sp_ttl">
-                            <h1>カフェサイト（架空）</h1>
+                            <h1>オンラインコミュニティ「うさゼミ」</h1>
                         </div>
                         <div class="list_left">
                             <div class="list_row">
@@ -597,6 +597,8 @@
             $('.sp_btn').on('click', function () {
 
                 $('.sp_btn').toggleClass('open');
+                $('.page_ttl').toggleClass('none')
+
 
                 if ($menu.is(':visible')) {
                     $effect.addClass('show');

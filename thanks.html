@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IdetaKaori's Portfolio</title>
+    <title>CONTACT | Kaori's Portfolio</title>
     <link href="
     https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
     " rel="stylesheet">
@@ -25,6 +25,11 @@
     </script>
 
     <style>
+        .page_ttl {
+            display: none;
+        }
+
+
         .thanks {
             display: flex;
             width: 100vw;
@@ -56,7 +61,7 @@
             margin-top: 40px;
         }
 
-        .x {
+        .thanks_x {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -68,7 +73,7 @@
             text-align: center;
         }
 
-        .x a {
+        .thanks_x a {
             width: 30px;
             opacity: 0.7;
         }
@@ -122,6 +127,14 @@
         }
 
         @media screen and (max-width: 767px) {
+            .page_ttl {
+                display: block;
+            }
+
+            .page_ttl p:nth-of-type(1) {
+                width: 100px;
+            }
+
             h2 {
                 width: 250px;
                 margin: 65px auto 30px;
@@ -171,13 +184,31 @@
         <div class="header">
             <div class="wrapper">
                 <nav class="pc_nav">
-                    <ul>
+                    <ul class="pc-nav_list">
                         <li class="en"><a href="./index.html">TOP</a></li>
                         <li class="en"><a href="./about.html">ABOUT ME</a></li>
-                        <li class="en here"><a href="#contact">CONTACT</a></li>
+                        <li class="en here"><a href="./contact.html">CONTACT</a></li>
+                        <li>
+                            <ul class="icon">
+                                <li>
+                                    <div class="x">
+                                        <a href="https://x.com/rin_de_sign"> <img src="./images/logo-black.png"
+                                                alt="Xのアイコン">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list-insta">
+                                    <div class="insta">
+                                        <a href="https://www.instagram.com/rin_de_sing/"> <img
+                                                src="./images/Instagram_Glyph_Black.svg" alt="Xのアイコン">
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                     <div class="line_vertical"></div>
-                    <ul>
+                    <ul class="pc-nav_list">
                         <li class="en"><a href="./works_hp.html">HP</a></li>
                         <li class="en"><a href="./works_lp.html">LP</a></li>
                         <li class="en"><a href="./works_bn.html">BANNER</a></li>
@@ -185,21 +216,46 @@
                     </ul>
                 </nav>
             </div>
+            <div class="page_ttl works">
+                <p class="en">CONTACT</p>
+                <!-- <p class="en">HP</p> -->
+            </div>
+
             <div class="sp_btn"><span></span></div>
             <div class="sp_menu">
                 <div>
                     <div class="menu_portfolioname">
-                        <p class="en">THANKS TO COMING. THIS IS THE <span>IDETA KAORI’S PORTFORIO</span>.</p>
+                        <p class="en">THANKS TO COMING. THIS IS THE <span>KAORI’S PORTFORIO</span>.THANKS TO COMING.
+                            THIS IS THE
+                            <span>KAORI’S PORTFORIO</span>.
+                        </p>
+                        <p class="en">THANKS TO COMING. THIS IS THE <span>KAORI’S PORTFORIO</span>.THANKS TO COMING.
+                            THIS IS THE
+                            <span>KAORI’S PORTFORIO</span>.
+                        </p>
                     </div>
-                    <div class="content">
+                    <div class="box">
                         <nav class="sp_nav">
-                            <ul>
-                                <li class="en"><a href="./index.html">TOP</a></li>
-                                <li class="en"><a href="./about.html">ABOUT ME</a></li>
-                                <li class="en"><a href="./works_hp.html">HP<span>WORKS</span></a></li>
-                                <li class="en"><a href="./works_lp.html">LP<span>WORKS</span></a></li>
-                                <li class="en"><a href="./works_bn.html">BANNER<span>WORKS</span></a></li>
-                                <li class="en"><a href="./contact.html">CONTACT</a></li>
+                            <ul class="sp-nav_list">
+                                <li class="en sp-nav_listitem current"><a href="./index.html">TOP</a></li>
+                                <li class="en sp-nav_listitem"><a href="./about.html">ABOUT ME</a></li>
+                                <li class="en sp-nav_listitem"><a href="./works_hp.html">HP<span>WORKS</span></a></li>
+                                <li class="en sp-nav_listitem"><a href="./works_lp.html">LP<span>WORKS</span></a></li>
+                                <li class="en sp-nav_listitem"><a href="./works_bn.html">BANNER<span>WORKS</span></a>
+                                </li>
+                                <li class="en sp-nav_listitem"><a href="./contact.html">CONTACT</a></li>
+                                <li class="sp-nav_iconlist">
+                                    <ul class="sp-icon">
+                                        <li class="en sp-icon_txt">SNS</li>
+                                        <li class="en sp-icon_x"><a href="https://x.com/rin_de_sign"><img
+                                                    src="./images/logo-black.png" alt="Xのアイコン"></a></li>
+                                        <li class="en sp-icon_insta"><a
+                                                href="https://www.instagram.com/rin_de_sing/"><img
+                                                    src="./images/Instagram_Glyph_Black.svg" alt="Instagramのアイコン"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+
                             </ul>
                         </nav>
                         <div class="triangle_top"></div>
@@ -215,11 +271,19 @@
     <!-- 左固定アニメーション -->
 
     <div class="top_portfolioname">
-        <p class="en">THANKS TO COMING. THIS IS THE <span>IDETA KAORI’S PORTFORIO</span>.THANKS TO COMING. THIS IS THE
-            <span>IDETA KAORI’S PORTFORIO</span>.THANKS TO COMING. THIS IS THE <span>IDETA KAORI’S
-                PORTFORIO</span>.THANKS TO COMING. THIS IS THE <span>IDETA KAORI’S PORTFORIO</span>.THANKS TO COMING.
-            THIS IS THE <span>IDETA KAORI’S PORTFORIO</span>.THANKS TO COMING. THIS IS THE <span>IDETA KAORI’S
-                PORTFORIO</span>.
+        <p class="en">THANKS TO COMING. THIS IS THE <span>KAORI’S PORTFORIO</span>.THANKS TO COMING. THIS IS THE
+            <span>KAORI’S PORTFORIO</span>.
+        </p>
+        <p class="en">THANKS TO COMING. THIS IS THE <span>KAORI’S PORTFORIO</span>.THANKS TO COMING.
+            THIS IS THE
+            <span>KAORI’S PORTFORIO</span>.
+        </p>
+    </div>
+
+    <!-- コピーライト -->
+
+    <div class="copy">
+        <p> <small>&copy; 2024 KAORI'S DESIGN</small>
         </p>
     </div>
     <div class="bg"></div>
@@ -230,7 +294,7 @@
                 <div class="wrapper">
                     <h2>お問い合わせいただきありがとうございます。</h2>
                     <p class="txt">3営業日以内にお返事いたします。<br>お時間がございましたら、<br>WORKSをご覧になりお待ちください。</p>
-                    <div class="x">
+                    <div class="thanks_x">
                         <a href="https://x.com/rin_de_sign"> <img src="./images/logo-black.png" alt="Xのアイコン">
                         </a>
                         <p>お急ぎの場合は、<br>お手数ですがXよりDMをお送りください。</p>
@@ -332,21 +396,34 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
         $(function () {
             const $effect = $('.fade-effect');
             const $menu = $('.sp_menu');
+            $effect.hide();
             $('.sp_btn').on('click', function () {
 
                 $('.sp_btn').toggleClass('open');
+                $('.page_ttl').toggleClass('none')
+
 
                 if ($menu.is(':visible')) {
                     $effect.addClass('show');
+                    $effect.show()
                     setTimeout(function () {
                         $effect.removeClass('show');
                         $menu.hide();
+                        setTimeout(function () {
+                            $effect.hide()
+                        }, 200)
                     }, 500)
                 } else {
                     $effect.addClass('show');
+                    $effect.show()
+
                     setTimeout(function () {
                         $effect.removeClass('show');
                         $menu.show();
+                        setTimeout(function () {
+                            $effect.hide()
+                        }, 200)
+
                     }, 500)
                 }
             })

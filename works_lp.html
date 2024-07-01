@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaori's Portfolio</title>
+    <title>WORKS-LP | Kaori's Portfolio</title>
     <link href="
     https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
     " rel="stylesheet">
@@ -45,6 +45,7 @@
 
         .sp_img {
             display: flex;
+            height: auto;
         }
 
         .sp_img a {
@@ -189,8 +190,11 @@
             <div class="pc_container wrapper">
                 <div class="scrolldown2"><span>SCROLL</span></div>
                 <div class="content">
-                    <a href="./works_lp_detail.html" class="img_square floatup">
-                        <img src="./images/lp_usazemi_1@2x.png"></a>
+                    <div class="zoomOutText"><a href="./works_lp_detail.html" class="img_square "><span
+                                class="mask"><img src="./images/lp_usazemi_1@2x.png" alt=""><span class="cap en">view
+                                    more</span></span></a></div>
+                    <!-- <a href="./works_lp_detail.html" class="img_square floatup">
+                        <img src="./images/lp_usazemi_1@2x.png"></a> -->
                     <p class="ttl">オンラインコミュニティ「うさゼミ」</p>
                     <div>
                         <p class="txt_none">レスポンシブ</p>
@@ -232,7 +236,7 @@
                                     <img src="./images/lp_usazemi_FV.jpg" alt=""></a>
                             </div>
                             <div class="txt">
-                                <h2>カフェサイト（架空）</h2>
+                                <h2>オンラインコミュニティ「うさゼミ」</h2>
                                 <p>レスポンシブ</p>
                             </div>
                         </div>
@@ -339,6 +343,8 @@
             $('.sp_btn').on('click', function () {
 
                 $('.sp_btn').toggleClass('open');
+                $('.page_ttl').toggleClass('none')
+
 
                 if ($menu.is(':visible')) {
                     $effect.addClass('show');
