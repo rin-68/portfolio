@@ -124,7 +124,7 @@ h2 {
   .inner {
     display: flex;
     /* gap: 68px; */
-    margin: 25px 42px auto 42px;
+    margin: 35px 42px auto 42px;
   }
 
   .contents {
@@ -152,7 +152,7 @@ h2 {
 
   h2 {
     margin-top: 0px;
-    margin-bottom: 4px;
+    margin-bottom: 11px;
   }
 
   .sp-img_none {
