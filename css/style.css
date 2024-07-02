@@ -638,7 +638,7 @@ h2 {
     width: 140px;
     transform: rotate(-35deg);
     position: absolute;
-    top: 107px;
+    top: 96px;
     left: -45px;
   }
 
@@ -646,6 +646,10 @@ h2 {
     width: 0px;
     height: 0px;
     background-color: transparent;
+  }
+
+  .txt_bg div {
+    margin-top: 10px;
   }
 
   /* .about .txt {
