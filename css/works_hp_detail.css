@@ -163,6 +163,10 @@ h2 {
 @media screen and (max-width: 767px) {
   /* 画像とリストが横並び */
 
+  .inner {
+    height: 650px;
+  }
+
   .pc_top {
     width: 360px;
     margin-left: 23px;
