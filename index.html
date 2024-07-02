@@ -28,34 +28,51 @@
     <style>
         @media screen and (max-width: 767px) {
 
-            .fv .wrapper {
+            .sp-fv {
+                display: flex;
+                height: 100%;
+                align-items: center;
+            }
+
+            .sp-fv .wrapper {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
             }
 
-            .fv .fv-top {
+            .sp-fv .fv-top {
                 display: flex;
             }
 
-            .fv .top-line {
-                margin-top: 90px;
-            }
-
-            .fv .sp_fv_line_top {
+            .sp-fv .sp_fv_line_top {
                 position: static;
                 width: 97px;
-                margin-left: 10px;
+                margin-left: 8px;
             }
 
+            .sp-fv h1 {
+                width: auto;
+                height: 188px;
+                text-align: center;
+            }
 
-            .fv .right-line {
+            .sp-fv .fv_line {
+                position: static;
+                margin-left: 8px;
+            }
+
+            .sp-fv p {
+                margin-top: 93px;
+            }
+
+            .sp-fv .right-line {
                 width: 96px;
-                height: 100px;
+                height: 124px;
                 border-right: 1px solid #ec6c4e;
-                margin-top: 434px;
+                margin-top: 344px;
             }
 
-            .fv .sp_fv_line_bottom {
+            .sp-fv .sp_fv_line_bottom {
                 position: static;
                 height: 1px;
                 margin-left: 97px;
@@ -73,7 +90,7 @@
 
     <!-- ローディング画面 -->
 
-    <div class="loading_animation">
+    <!-- <div class="loading_animation">
         <strong class="loading">
             <span></span>
             <span></span>
@@ -83,7 +100,7 @@
             <span></span>
             <span></span>
         </strong>
-    </div>
+    </div> -->
 
     <!-- 右固定ナビゲーション -->
 
@@ -197,6 +214,8 @@
 
         <!-- メインビジュアル -->
 
+        <!-- PC版 -->
+
         <section data-scroll-section class="scroll_section first_section ">
             <div class="fv pc-fv">
                 <div class="wrapper">
@@ -210,6 +229,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- SP版 -->
 
         <section data-scroll-section class="scroll_section first_section">
             <div class="fv sp-fv">
@@ -492,17 +513,20 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                     const contactLine = document.querySelector('.contact_line')
                     // 左側
                     const h1 = document.querySelector('h1')
-                    const lineTop = document.querySelector('.sp_fv_line_top')
-                    console.log(lineTop)
+                    // const lineTop = document.querySelector('.sp_fv_line_top')
+                    const topLine = document.querySelector('.top-line')
+
+                    // console.log(lineTop)//表示可能
                     const secondSection = document.querySelector('.second_section')
                     const firstContents = document.querySelector('.first_contents')
                     const secondContents = document.querySelector('.second_contents')
                     const thirdContents = document.querySelector('.third_contents')
                     // 左側距離（右端）
-                    const h1X = h1.getBoundingClientRect().right
-                    const lineTopX = lineTop.getBoundingClientRect().x
-                    console.log(lineTopX)
+                    var h1X = h1.getBoundingClientRect().right
+                    const topLineX = topLine.getBoundingClientRect().x
+
                     const secondSectionX = secondSection.getBoundingClientRect().right
+                    console.log(secondSectionX)//計算可
                     const firstContentsX = firstContents.getBoundingClientRect().right
                     const secondContentsX = secondContents.getBoundingClientRect().right
                     const thirdContentsX = thirdContents.getBoundingClientRect().right
@@ -534,7 +558,9 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                         contactLine.style.width = lineWidthContact + 'px'
                     } else {
                         /**画面幅が768px以下のときの処理 */
-                        var lineWidthAbout = secondCursiveX - lineTopX
+
+
+                        var lineWidthAbout = secondCursiveX - topLineX
                         const lineWidthWorks = worksCursiveX - secondSectionX + 140
                         var lineWidthLp = lpLineX - firstContentsX + 70
                         const lineWidthBn = bnLineX - secondContentsX + 70
