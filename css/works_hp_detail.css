@@ -90,6 +90,11 @@ h1 {
   align-items: center;
 }
 
+.sp-list {
+  /* SP版リスト非表示 */
+  display: none;
+}
+
 .list_row:nth-of-type(n + 2) {
   margin-top: 23px;
 }
@@ -116,7 +121,7 @@ h1 {
 
 .point {
   width: 677px;
-  height: 397px;
+  height: 398px;
   border: 1px solid #f2917e;
   border-left: 11px solid #f2917e;
   box-sizing: border-box;
@@ -156,7 +161,94 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
-  .page_ttl.hp {
+  /* 画像とリストが横並び */
+
+  .pc_top {
+    width: 360px;
+    margin-left: 23px;
+  }
+
+  .pc_top .container {
+    margin-bottom: 80px;
+  }
+
+  .pc_top .scrolldown2 {
+    top: 90%;
+    left: 21px;
+  }
+
+  .pc_top .ttl {
+    display: block;
+    width: auto;
+    height: auto;
+    border: none;
+    margin-left: 0;
+    margin-bottom: 28px;
+  }
+
+  .pc_top h1 {
+    font: 16px;
+    width: 300px;
+    border-left: 5px solid #f2917e;
+    padding-left: 10px;
+  }
+
+  .pc_top p {
+    font-size: 14px;
+    width: 102px;
+    height: 28px;
+    margin-top: 10px;
+    margin-left: 231px;
+  }
+
+  .pc_top .img_pc {
+    height: 194px;
+  }
+
+  .pc_top .img_sp {
+    width: 72px;
+    top: 51px;
+    left: 257px;
+  }
+
+  .pc-list {
+    display: none;
+  }
+
+  /* ーーーーーーーーーー
+  リスト
+  ーーーーーーーーーー */
+
+  .sp-list {
+    display: flex;
+    gap: 23px;
+  }
+
+  .sp-list .list_row:nth-of-type(n + 2) {
+    margin-top: 23px;
+  }
+
+  .sp-list ul {
+    flex-direction: column;
+  }
+
+  .sp-list .list_ttl {
+    width: 240px;
+  }
+
+  .sp-list .list_txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 142px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  /* 画像とリストが縦並び */
+
+  /* .page_ttl.hp {
     display: flex;
   }
 
@@ -276,7 +368,7 @@ h2 {
     width: 330px;
     height: 205px;
     margin-left: 15px;
-  }
+  } */
 }
 
 /* ーーーーーーーーーー
