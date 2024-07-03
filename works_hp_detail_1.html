@@ -76,12 +76,19 @@
 
             <!-- SP版 -->
 
+            <!-- ページタイトル -->
+
             <div class="page_ttl hp">
                 <p class="en">WORKS</p>
                 <p class="en">HP</p>
             </div>
 
+            <!-- ボタン -->
+
             <div class="sp_btn"><span></span></div>
+
+            <!-- メニュー -->
+
             <div class="sp_menu">
                 <div>
                     <div class="menu_portfolioname">
@@ -151,6 +158,8 @@
 
     <div class="bg"></div>
 
+    <!-- メイン -->
+
     <main data-scroll-container>
 
         <!-- PC版 -->
@@ -180,25 +189,7 @@
         <section data-scroll-section class="scroll_section second_section">
             <div class="sp_container section-inner">
                 <div class="inner">
-                    <!-- <div class="sp_top">
-                        <div class="container fixed-container">
-                            <div class="scrolldown2"><span>SCROLL</span></div>
-
-                            <div class="img">
-                                <div class="img_pc"> <img src="./images/hp_cafe_sp_1@2x.png">
-                                </div>
-                                <div class="img_sp"> <img src="./images/hp_cafe_sp@2x.png">
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- PC、SP共通 -->
-
                     <div class="contents wrapper bottom-txt">
-                        <!-- <div class="sp_ttl">
-                            <h1>カフェサイト（架空）</h1>
-                        </div> -->
 
                         <!-- PCリスト -->
 
@@ -288,11 +279,6 @@
                             </div>
                         </div>
 
-
-
-
-
-
                         <!-- PC・SP共通 -->
 
                         <div class="point">
@@ -313,10 +299,13 @@
             </div>
         </section>
 
-        <!-- PC版 ALL -->
+        <!-- ALLPAGE -->
 
         <section data-scroll-section class="scroll_section">
             <div class="pc_all section-inner">
+
+                <!-- PC -->
+
                 <div class="allpage">
                     <p class="en">ALL PAGES</p>
                     <div class="maxheight fadeInTrigger">
@@ -338,6 +327,8 @@
                         <img src="./images/hp_cafe_sp_7@2x-80.jpg" alt="">
                     </div>
 
+                    <!-- SP -->
+
                     <div class="txt_wrapper fadeInTrigger">
                         <p class="en">RESPONSIVE</p>
                     </div>
@@ -351,6 +342,9 @@
                         <img src="./images/hp_cafe_sp_10@2x-80.jpg" alt="">
                     </div>
                 </div>
+
+                <!-- リンク -->
+
                 <div class="wrapper">
                     <a href="./contact.html">
                         <div class="btn">
@@ -358,49 +352,9 @@
                             <img src="./images/mail.svg">
                         </div>
                     </a>
-
                 </div>
             </div>
         </section>
-
-        <!-- SP版 ALL -->
-
-        <!-- <section data-scroll-section class="scroll_section forth_section verticalscrolling">
-            <div class="sp_all sliders_wrapper section-inner">
-                <div class="sp_allpage">
-                    <p class="en slide">ALL PAGES</p>
-                    <div class="images_top slide">
-                        <img src="./images/hp_cafe_all_1.jpg" alt="">
-                    </div>
-                    <div class="images slide">
-                        <div class="images_left">
-                            <div>
-                                <img src="./images/hp_cafe_all_2.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="./images/hp_cafe_all_3.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="images_right">
-                            <div>
-                                <img src="./images/hp_cafe_all_4.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="./images/hp_cafe_all_5.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wrapper slide">
-                        <a href="">
-                            <div class="btn">
-                                <p class="en">CONTACT</p>
-                                <img src="./images/mail.svg">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
     </main>
 
@@ -408,6 +362,8 @@
     <script src="
     https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
     "></script>
+
+
     <script>
         (() => {
             document.addEventListener('DOMContentLoaded', () => {
@@ -432,122 +388,11 @@
                 })
 
 
-
-
-
-
-
-
-                // ここから追加
-
-                // scroll.on("scroll", ScrollTrigger.update);//  scrollがスクロールされた時にスクロールトリガーと更新する（スクロール位置に基づいてアニメーションを更新する）
-
-                // ScrollTrigger.scrollerProxy('[data-scroll-container]', {//  スクロールトリガーで以下のプロキシを使用する（scrollがonになるとLocomotivescrollがスクロール制御し、elで指定した部分で調整を行うので、そのプロキシをスクロールトリガーでも使用する
-                //     scrollLeft(value) {//  要素の1番左からのスクロール位置(value)を取得する
-                //         return arguments.length ? scroll.scrollTo(value, 0, 0) : scroll.scroll.instance.scroll.x;//  argument.lengthがtrue(1以上で「ある」)場合、スクロール位置を設定、false(0で「ない」)場合、現在のスクロール位置を取得する
-                //     },
-                //     getBoundingClientRect() {
-                //         return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight }
-                //     },
-                //     pinType: document.querySelector('[data-scroll-container]').style.transform ? "transform" : "fixed"
-                // })
-
-
-                // const sections = gsap.utils.toArray('section')//  全てのsection要素を配列に変換してsectionsに代入する
-
-                // sections.forEach(function (section) {//  配列内の各section要素に対して以下の処理を行う
-
-                //     const inner = section.classList.contains('.second_section') ? section.querySelector('.bottom-txt') : section.querySelector('.section-inner');
-                //     //.second_section(固定要素のあるセクションのクラス名)を持つセクションの場合.bottom-txt(固定要素のセクション内のスクロール部分のクラス名)を、持たない場合は.section-innerを「inner」に代入する
-                //     console.log('inner')
-                // if (!Section.classList.contains('verticalscrolling')) {//  垂直方向スクロールでない(水平＝横スクロール)セクションの場合
-
-                //     scrollTrigger.create({//スクロールトリガーを作成する
-
-                //         scroller: '[data-scroll-container]',//スクロールコンテナとして全体を指定する
-                //         trigger: section,//トリガー要素としてセクションを指定する
-                //         start: section.scrollWidth <= window.innerWidth ? 'top top' : 'bottom bottom',//ウインドウ幅よりセクション幅が小さいときは左端を、セクション幅が大きい時ははみ出るので右端を開始地点とする
-                //         // start: 'top top',
-                //         end: '+=100%',//  セクション開始位置から100％分のスクロール距離
-                //         pin: inner,//.section-innerを代入する
-                //         pinSpacing: false,
-                //         pinType: 'transform',
-                //         markers: true
-                //     })
-
-                // } else {//  垂直方向スクロールセクションの場合（＝section自体は横スクロールで、その中のコンテンツsp_allpageのみ縦スクロール）
-                //     const verticalscroll = section.querySelector('sp_allpage');
-
-                //     scrollTrigger.create({
-
-                //         scroller: '[data-scroll-container]',
-                //         trigger: section,
-                //         direction: vertical,
-                //         start: 'center center',
-                //         end: () => `+=${section.scrollHight + window.innerWidth}`,
-                //         pin: inner,//.section-innerを代入する
-                //         pinSpacing: true,
-                //         pinType: 'transform',
-                //         anticipatePin: 1,
-                //         markers: true
-                //     })
-
-                //     gsap.to(verticalscroll, {
-
-                //         y: () => `${-(section.scrollHight - document.documentElement.clientHeigth)}px`,
-
-                //         ease: 'none',
-
-                //         scrollTrigger: {
-
-                //             trigger: verticalscroll,
-                //             scroller: '[data-scroll-container]',
-                //             start: 'center center',
-                //             // start: 'top top',
-                //             end: () => `+=${section.scrollHeight}`,
-                //             // end: () => "+=" + document.querySelector(".data-scroll-section").offsetHeight,
-                //             scurub: true,
-                //             markers: true
-                //         }
-                //     });
-                // }
-                // })
-                // const timeline = gsap.timeline({
-
-                //     scrollTrigger: {
-
-                //         trigger: '.sp_top ',//固定するもの
-                //         scroller: '[data-scroll-container]',
-                //         scrub: true,
-                //         // start: 'left left',
-                //         start: 'top top',// セクションのtop(1つ目、セクションの上から50pxだとtop=+50になる)がウインドウのtop(2つ目)に来た時
-                //         // endTrigger: '.second_section .section-inner',
-                //         endTrigger: '.bottom-txt',
-                //         // end: 'right right',
-                //         end: 'bottom bottom',
-                //         anticipatePin: 1,
-                //         pin: true,
-                //         pinSpacing: false,
-                //         pinType: 'transform',
-                //         markers: true
-                //     }
-                // });
-
-                // ScrollTrigger.addEventListener("refresh", () => Scroll.update());
-
                 ScrollTrigger.refresh();
 
 
 
-
-                // const container = document.querySelector('.fixed-container')
-                // const bottomText = document.querySelector('.bottom-txt')
-                // const bottomTextRight = bottomText.getBoundingClientRect().right
-                // console.log(container)
-                // console.log(bottomText)
-                // console.log(bottomTextRight)
-
-
+                // ＝＝＝＝背景＝＝＝＝
 
 
                 const bg = document.querySelector('.bg')
@@ -576,25 +421,9 @@
                 })
 
 
-                // const container = document.querySelector('.forth_section')
-                // const slides = document.querySelectorAll('.slide')
-                // const containerHeight = container.offsetHeight;
-                // gsap.to(slides, {
-                //     yPercent: -110 * (slides.length - 1),
-                //     ease: "none",
-                //     scrollTrigger: {
-                //         // start: 'top top'
-                //         trigger: container,
-                //         pin: true,
-                //         scurub: 1,
-                //         end: () => '+= ${ containerHeight }',
-                //         anticipatePin: 1,
-                //         invalidateOnRefresh: true
-                //     }
-                // })
 
+                // ＝＝＝＝ALLPAGESが右からフェードイン＝＝＝＝
 
-                // PC版のALLPAGESが右からフェードインする
 
                 // 動きのきっかけとなるアニメーションの名前を定義
                 function fadeAnime() {
@@ -619,30 +448,14 @@
                     fadeAnime();/* アニメーション用の関数を呼ぶ*/
                 });// ここまで画面をスクロールをしたら動かしたい場合の記述
 
-
-
-
-
-
-
-
-
-
-
             })
+
         })()
 
     </script>
     <script>
-        // $(function () {
-        //     $('.sp_btn').on('click', function () {
-        //         $('.sp_menu').fadeToggle();
-        //         $('.sp_btn').toggleClass('open');
-        //     })
-        // });
 
-
-        // SP版メニュー
+        // ＝＝＝＝SP版メニュー＝＝＝＝
 
         $(function () {
             const $effect = $('.fade-effect');
@@ -652,7 +465,6 @@
 
                 $('.sp_btn').toggleClass('open');
                 $('.page_ttl').toggleClass('none')
-
 
                 if ($menu.is(':visible')) {
                     $effect.addClass('show');
@@ -682,18 +494,6 @@
 
 
     </script>
-    <script>
-        $(function () {
-            if (window.matchMedia("(max-width: 768px)").matches) {
-
-
-                $('sp_container').toggleClass('active');
-                $('.contents').toggleClass('wrapper');
-                $('inner').toggleClass('wrapper');
-            }
-        });
-    </script>
-
 
 
 </body>
