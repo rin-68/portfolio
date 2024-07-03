@@ -42,7 +42,8 @@
 
         /* 横長のとき */
 
-        /* .pc_top .ttl {
+        .pc_top .ttl {
+            /* 画像サイズによってここを変更して、リストと高さを合わせる */
             margin-bottom: 56px;
         }
 
@@ -55,52 +56,40 @@
         .pc_top .img_pc img {
             width: 100%;
             height: auto;
-        } */
+        }
 
-        /* 正方形のとき */
+        @media screen and (max-width: 767px) {
 
-        .pc_top .ttl {
+            .pc_top .ttl {
+                /* 画像サイズによってここを変更して、リストと高さを合わせる */
+                margin-bottom: 29px;
+            }
+
+            .pc_top .img_pc {
+                /* MAXはwidth341（正方形の時と同じ横幅になる）でタイトルの左端を合わせるためにmargin分マイナス */
+                width: 331px;
+                /* タイトルと左端を揃える */
+                margin-left: 10px;
+            }
+
+            /* 正方形のとき */
+
+            /* .pc_top .ttl {
             margin-bottom: 20px;
         }
 
         .pc_top .img {
             display: flex;
             justify-content: center;
-        }
-
-        /* リンク */
-
-        .pc_all {
-            height: 100%;
-        }
-
-        /* SP版 正方形のとき */
-
-        .sp_top .img {
-            margin-top: 53px;
-            margin-left: 72px;
-        }
-
-        .sp_top .img_pc {
-            height: 234px;
-        }
-
-        /* SP版 横長のとき */
-
-        /* .sp_top .img {
-            margin-top: 85px;
-            margin-left: 71px;
-        }
-
-        .sp_top .img_pc {
-            width: 290px;
-            height: auto;
-        }
-
-        .sp_top .img_pc img {
-            width: 100%;
-            height: auto;
         } */
+
+            /* リンク */
+
+            .pc_all {
+                height: 100%;
+            }
+
+        }
     </style>
 
 </head>
@@ -245,11 +234,11 @@
                     <div class="container">
                         <div class="scrolldown2"><span>SCROLL</span></div>
                         <div class="ttl">
-                            <h1>表参道スパイス研究所様</h1>
+                            <h1>デラックスバーガー（POP）</h1>
                             <p>BANNER</p>
                         </div>
                         <div class="img">
-                            <div class="img_pc"> <img src="./images/bn_supaisukennkyuujyo_1.jpg">
+                            <div class="img_pc"> <img src="./images/bn_deluxeburger1@2x-80.jpg">
                             </div>
                             <!-- <div class="img_sp"> <img src="./images/hp_cafe_sp@2x.png">
                             </div> -->
