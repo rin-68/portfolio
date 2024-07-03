@@ -106,31 +106,36 @@ h1 {
 }
 
 .list_row:nth-of-type(n + 2) {
-  margin-top: 23px;
+  margin-top: 5px;
 }
 
 .list_ttl {
   font-size: 15px;
-  line-height: 3;
+  line-height: 1.5;
   text-align: center;
   color: #fffcf5;
   width: 104px;
-  height: 47px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #f2917e;
 }
 
 .list_txt {
   font-size: 15px;
-  line-height: 3;
+  line-height: 1.5;
   width: 390px;
-  height: 47px;
+  height: 62px;
+  display: flex;
+  align-items: center;
   padding-left: 17px;
   border: 1px solid #f2917e;
   box-sizing: border-box;
 }
 
 .point {
-  width: 677px;
+  width: 705px;
   height: 398px;
   border: 1px solid #f2917e;
   border-left: 11px solid #f2917e;
@@ -253,6 +258,7 @@ h2 {
 
   .sp-list .list_ttl {
     width: 240px;
+    height: 39px;
   }
 
   .sp-list .list_txt {
@@ -260,10 +266,10 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 240px;
-    height: 142px;
+    height: 149px;
     line-height: normal;
     text-align: center;
-    padding: 0;
+    padding: 0px 20px;
   }
 
   /* 画像とリストが縦並び */

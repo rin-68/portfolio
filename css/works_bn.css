@@ -36,6 +36,13 @@
   margin: auto;
 }
 
+/* 画像５枚目 */
+.img_h {
+  width: 188px;
+  /* height: 366px; */
+  margin: auto;
+}
+
 .contents img {
   display: block;
   margin: auto;
@@ -147,6 +154,13 @@ h2 {
   .sp-img_w {
     display: block;
     width: 210px;
+    margin: auto;
+  }
+
+  /* 画像５枚目 */
+  .sp-img_h {
+    display: block;
+    width: 131px;
     margin: auto;
   }
 

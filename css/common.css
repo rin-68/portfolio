@@ -12,38 +12,20 @@
   opacity: 1;
 }
 
-/* Avoid Chrome to see Safari hack */
-/* @supports (-webkit-touch-callout: none) {
-  body {
-    height: -webkit-fill-available;
-  }
-} */
-
 body {
   width: 100vw;
   background-color: #fffcf5;
   overflow-y: hidden;
-
   height: 100vh;
-  /* height: -webkit-fill-available; */
-
-  /* min-height: 100vh; Fallback */
-  /* min-height: calc(var(--vh, 1vh) * 100); */
 }
 
 main {
   overflow: hidden !important;
   scroll-snap-type: x mandatory;
-  overflow: scroll;
+  /* overflow: scroll; */
   background-color: #fffcf5;
   height: 100%;
-
-  /* height: -webkit-fill-available; */
 }
-
-/* header {
-  height: -webkit-fill-available !important;
-} */
 
 section.scroll_section {
   scroll-snap-align: center;
@@ -129,14 +111,6 @@ section.scroll_section {
     transform: translateY(-100%);
   }
 }
-/* @keyframes loop-animation {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-100%);
-  }
-} */
 
 @media screen and (max-width: 767px) {
   .top_portfolioname {
@@ -213,10 +187,6 @@ header .wrapper {
   font-size: 16px;
 }
 
-/* .px_nav .icon {
-  gap: 10px;
-} */
-
 .icon {
   display: flex;
   height: 47px;
@@ -266,8 +236,6 @@ header .wrapper {
 
 .x a,
 .insta a {
-  /* width: 20px; */
-  /* height: 20px; */
   opacity: 0.7;
 }
 
@@ -412,7 +380,6 @@ header .wrapper {
     transform: rotate(180deg);
     margin-left: 5%;
     display: flex;
-    /* overflow: hidden; */
   }
 
   .menu_portfolioname p {
@@ -425,13 +392,6 @@ header .wrapper {
   .menu_portfolioname span {
     color: #ec6c4e;
   }
-
-  /* .menu_portfolioname p {
-    writing-mode: vertical-rl;
-    margin: 0 auto;
-    animation: loop-animation 80s linear infinite;
-    white-space: nowrap;
-  } */
 
   @keyframes loop-animation {
     from {
@@ -493,9 +453,7 @@ header .wrapper {
 
   .sp-icon {
     display: flex;
-    /* justify-content: flex-start; */
     gap: 20px;
-    /* bottom: 0; */
   }
 
   .sp-icon_txt {
@@ -630,11 +588,8 @@ SP版 左上文字
 }
 
 .float:hover {
-  /* top: -3px; */
   transform: translateY(-3px);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-
-  /* box-shadow: 0 1px 5px #a6eb83, 0 0 10px #eaf6e2; */
   border-color: #53c711;
 }
 
@@ -652,7 +607,6 @@ SP版 左上文字
   transition: all 0.3s;
 }
 .floatup:hover {
-  /* filter: grayscale(40%); */
   top: -3px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
@@ -731,7 +685,6 @@ SP版 左上文字
   position: absolute;
   top: 40%;
   left: 100px;
-  /* left: 6%; */
 }
 
 /*Scrollテキストの描写*/
@@ -739,16 +692,11 @@ SP版 左上文字
   /*描画位置*/
   position: absolute;
   left: 8px;
-  /* left: 210px; */
   bottom: 7px;
-  /* bottom: 3px; */
   /*テキストの形状*/
   color: #ec6c4e;
-  /* color: #423732; */
   font-size: 12px;
-  /* font-size: 1rem; */
   letter-spacing: 0.46em;
-  /* letter-spacing: 0.1em; */
   /*縦書き設定*/
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-rl;
@@ -762,13 +710,11 @@ SP版 左上文字
   position: absolute;
   bottom: 0;
   left: -5px;
-  /* left: -4px; */
   /*丸の形状*/
   width: 9px;
   height: 9px;
   border: 1px solid #ec6c4e;
   border-radius: 50%;
-  /* background: #423732; */
   /*丸の動き1.6秒かけて透過し、永遠にループ*/
   animation: circlemove 2.6s ease-in-out infinite,
     cirlemovehide 2.6s ease-out infinite;
@@ -809,8 +755,6 @@ SP版 左上文字
   left: 0;
   /*線の形状*/
   width: 1px;
-  /* width: 2px; */
-  /* height: 50px; */
   height: 100px;
   background: #ec6c4e;
 }
@@ -838,7 +782,6 @@ SP版 左上文字
   animation-name: slideTextX100;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-  /* opacity: 1; */
   opacity: 0;
 }
 

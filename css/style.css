@@ -348,10 +348,10 @@ h1 {
     /*描画位置*/
     position: absolute;
     bottom: 0;
-    left: 292px;
+    left: 290px;
     /*丸の形状*/
-    width: 10px;
-    height: 10px;
+    width: 9px;
+    height: 9px;
     border: 1px solid #ec6c4e;
     border-radius: 50%;
     /* background: #423732; */

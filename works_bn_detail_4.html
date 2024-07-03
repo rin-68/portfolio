@@ -42,8 +42,7 @@
 
         /* 横長のとき */
 
-        .pc_top .ttl {
-            /* 画像サイズによってここを変更して、リストと高さを合わせる */
+        /* .pc_top .ttl {
             margin-bottom: 56px;
         }
 
@@ -61,34 +60,36 @@
         @media screen and (max-width: 767px) {
 
             .pc_top .ttl {
-                /* 画像サイズによってここを変更して、リストと高さを合わせる */
                 margin-bottom: 29px;
             }
 
             .pc_top .img_pc {
-                /* MAXはwidth341（正方形の時と同じ横幅になる）でタイトルの左端を合わせるためにmargin分マイナス */
                 width: 331px;
-                /* タイトルと左端を揃える */
                 margin-left: 10px;
             }
+        } */
 
-            /* 正方形のとき */
+        /* 正方形のとき */
 
-            /* .pc_top .ttl {
+        .pc_top .ttl {
             margin-bottom: 20px;
         }
 
         .pc_top .img {
             display: flex;
             justify-content: center;
-        } */
+        }
 
-            /* リンク */
+        /* １BOXのときは、width400 */
 
-            .pc_all {
-                height: 100%;
-            }
+        .point {
+            width: 400px;
+        }
 
+        /* リンク */
+
+        .pc_all {
+            height: 100%;
         }
     </style>
 
@@ -234,11 +235,11 @@
                     <div class="container">
                         <div class="scrolldown2"><span>SCROLL</span></div>
                         <div class="ttl">
-                            <h1>デラックスバーガー（POP）</h1>
+                            <h1>美容クリニック検索サイト</h1>
                             <p>BANNER</p>
                         </div>
                         <div class="img">
-                            <div class="img_pc"> <img src="./images/bn_deluxeburger1@2x-80.jpg">
+                            <div class="img_pc"> <img src="./images/bn_biyouclinic.png">
                             </div>
                             <!-- <div class="img_sp"> <img src="./images/hp_cafe_sp@2x.png">
                             </div> -->
@@ -261,6 +262,7 @@
                             <div class="list_row">
                                 <ul>
                                     <li class="list_ttl">制作期間</li>
+                                    <!-- テキストの長さによってwidth変更する -->
                                     <li class="list_txt">１日</li>
                                 </ul>
                             </div>
@@ -273,26 +275,26 @@
                             <div class="list_row">
                                 <ul>
                                     <li class="list_ttl">使用ツール</li>
-                                    <li class="list_txt">Illustrator</li>
+                                    <li class="list_txt">canva</li>
                                 </ul>
                             </div>
                             <div class="list_row">
                                 <ul>
                                     <li class="list_ttl">ターゲット</li>
-                                    <li class="list_txt">都会で遊んでいる20代の男女</li>
+                                    <li class="list_txt">20〜30代の韓国美容に興味はあるものの、まだそれほど詳しくない女性</li>
                                 </ul>
                             </div>
                             <div class="list_row">
                                 <ul>
                                     <li class="list_ttl">コンセプト</li>
-                                    <li class="list_txt">気軽に入店できるバーガーショップの新商品のPOPな雰囲気を表現する
+                                    <li class="list_txt">洗練された雰囲気でありながらも、わかりやすさ重視
                                     </li>
                                 </ul>
                             </div>
                             <div class="list_row">
                                 <ul>
                                     <li class="list_ttl">目的・課題</li>
-                                    <li class="list_txt">お店への集客</li>
+                                    <li class="list_txt">予約サイトへの遷移、Instagram広告</li>
                                 </ul>
                             </div>
                         </div>
@@ -318,13 +320,13 @@
                                 <div class="list_row">
                                     <ul>
                                         <li class="list_ttl">使用ツール</li>
-                                        <li class="list_txt">Illustrator</li>
+                                        <li class="list_txt">canva</li>
                                     </ul>
                                 </div>
                                 <div class="list_row">
                                     <ul>
                                         <li class="list_ttl">ターゲット</li>
-                                        <li class="list_txt">都会で遊んでいる20代の男女</li>
+                                        <li class="list_txt">20〜30代の韓国美容に興味はあるものの、まだそれほど詳しくない女性</li>
                                     </ul>
                                 </div>
                             </div>
@@ -332,13 +334,13 @@
                                 <div class="list_row">
                                     <ul>
                                         <li class="list_ttl">コンセプト</li>
-                                        <li class="list_txt">気軽に入店できるバーガーショップの新商品のPOPな雰囲気を表現する</li>
+                                        <li class="list_txt">洗練された雰囲気でありながらも、わかりやすさ重視</li>
                                     </ul>
                                 </div>
                                 <div class="list_row">
                                     <ul>
                                         <li class="list_ttl">目的・課題</li>
-                                        <li class="list_txt">お店への集客</li>
+                                        <li class="list_txt">予約サイトへの遷移、Instagram広告</li>
                                     </ul>
                                 </div>
                             </div>
@@ -348,19 +350,17 @@
 
                         <div class="point">
                             <h2>制作ポイント</h2>
-                            <p>「都会で遊んでいるときに手軽に食べることができるバーガーショップに新商品が発売され、SNSで広告を見た方がその日のランチに入店できるような雰囲気をPOPな表現としてデザインした。
+                            <!-- テキストの長さによってwidth変更する -->
+                            <p>「リラックスして」受けられることをイメージさせるため、ターゲット層が好む淡いピンク色を基調とし、丸や曲線を使用。
 
-                                <br><br>全体的に中央から飛び出すような形で表現し、具体的には商品の訴求ポイントである「デラックス感」を出すために、写真素材を大きく、左右にはみ出す形で使用することで想像を超える大きさを表現。
+                                <br><br>サブコピーは楕円の中に３つ並べることでポイントとなる部分がわかりやすく伝わる様に工夫する。
 
-                                <br><br>また商品名を大きく、ぎゅっと集まるように重ねて配置することで、バーガーの肉厚感をイメージさせる工夫を行なった。
-
-                            </p>
-                            <p>カラー調整で、全体をアメリカンカジュアルな印象とし、POPさを出すためにフォントは丸みのあるものを使用した。
+                                <br><br>美容に関するバナーのため、被写体はナチュラルで女性が理想をイメージできるものを選択した。
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>ß
+            </div>
         </section>
 
         <!-- ALLPAGE -->
