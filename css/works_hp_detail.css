@@ -403,6 +403,7 @@ h2 {
 
 .pc_all {
   display: flex;
+  height: 100%;
   align-items: center;
 }
 
