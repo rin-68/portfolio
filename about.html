@@ -854,9 +854,6 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                 // ＝＝＝＝フェードアップ（z-indexは打ち消される）＝＝＝＝
 
 
-
-
-
                 function delayScrollAnime() {
                     var time = 0.2;//遅延時間を増やす秒数の値
                     var value = time;
@@ -903,18 +900,6 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
                 // ＝＝＝＝セクションを繋ぐ直線を計算して表示する＝＝＝＝
 
 
@@ -930,7 +915,6 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                     const loveLineSp = document.querySelector('.love_line_sp')
                     const designLine = document.querySelector('.design_line')
                     const designLineSp = document.querySelector('.design_line_sp')
-
                     // 左側（PC、SP共通）
                     const firstSection = document.querySelector('.first-section')
                     // console.log(firstSection)
@@ -938,7 +922,6 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                     const thirdSection = document.querySelector('.third-section')
                     const forthSection = document.querySelector('.forth-section')
                     const fifthSection = document.querySelector('.fifth-section')
-
                     // 左側距離（右端）
                     const firstSectionRight = firstSection.getBoundingClientRect().right
                     // console.log(firstSectionRight)
@@ -946,7 +929,6 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                     const thirdSectionRight = thirdSection.getBoundingClientRect().right
                     const forthSectionRight = forthSection.getBoundingClientRect().right
                     const fifthSectionRight = fifthSection.getBoundingClientRect().right
-
                     // 右側（上：PC、下：SP）
                     const historyCursive = document.querySelector('.history_cursive')
                     const historyCursiveSp = document.querySelector('.history_cursive_sp')
@@ -959,7 +941,6 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                     const loveCursiveSp = document.querySelector('.love_cursive_sp')
                     const designCursive = document.querySelector('.design_cursive')
                     const designCursiveSp = document.querySelector('.design_cursive_sp')
-
                     // 右側距離（左端）（上：PC、下：SP）
                     const historyCursiveX = historyCursive.getBoundingClientRect().x
                     // console.log(historyCursiveX)
@@ -1000,7 +981,6 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                         loveLineSp.style.width = lineWidthLove + 'px'
                         designLineSp.style.width = lineWidthDesign + 'px'
                     }
-
                 }
                 calculate()
                 window.addEventListener('resize', () => {

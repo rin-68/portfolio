@@ -437,7 +437,7 @@ h2 {
 
 /* ALLを１枚の画像に変えた時 下３つのCSS*/
 
-.allpage img {
+/* .allpage img {
   max-width: none;
 }
 
@@ -452,11 +452,11 @@ h2 {
 
 .sp-img_all img {
   height: 400px;
-}
-
-/* .allpage img {
-  max-width: 431px;
 } */
+
+.allpage img {
+  max-width: 431px;
+}
 
 .allpage .maxheight img {
   height: 100%;
