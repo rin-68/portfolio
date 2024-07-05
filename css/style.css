@@ -189,7 +189,7 @@ section.scroll_section {
 
 .fv {
   display: flex;
-  height: 100vh;
+  height: 100svh;
   width: 100vw;
   align-items: center;
   justify-content: center;
@@ -425,7 +425,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: 99% bottom;
   display: flex;
-  height: 100vh;
+  height: 100svh;
   align-items: center;
 
   /* height: -webkit-fill-available; */
