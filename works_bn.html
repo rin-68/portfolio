@@ -349,18 +349,18 @@
 
                 // ＝＝＝＝背景＝＝＝＝
 
-                const bg = document.querySelector('.bg')
-                const secondSection = document.querySelector('.second_section')
-                const secondSectionX = secondSection.getBoundingClientRect().x
-                // console.log(secondSectionX)
-                scroll.on('scroll', function (event) {
-                    const scrollX = event.scroll.x
-                    // console.log(scrollX)
-                    if (scrollX <= secondSectionX) {
-                        const opacity = 1 - (scrollX / secondSectionX)
-                        bg.style.opacity = opacity
-                    }
-                })
+                // const bg = document.querySelector('.bg')
+                // const secondSection = document.querySelector('.second_section')
+                // const secondSectionX = secondSection.getBoundingClientRect().x
+                // // console.log(secondSectionX)
+                // scroll.on('scroll', function (event) {
+                //     const scrollX = event.scroll.x
+                //     // console.log(scrollX)
+                //     if (scrollX <= secondSectionX) {
+                //         const opacity = 1 - (scrollX / secondSectionX)
+                //         bg.style.opacity = opacity
+                //     }
+                // })
 
 
             })

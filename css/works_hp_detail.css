@@ -551,7 +551,7 @@ PC版ALLPAGESが右からふわっとフェードイン
 
 .fadeIn {
   animation-name: fadeInAnime;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
