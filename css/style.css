@@ -425,7 +425,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: 99% bottom;
   display: flex;
-  height: 100vh;
+  height: 100%;
   align-items: center;
 
   /* height: -webkit-fill-available; */
