@@ -24,6 +24,13 @@
                 h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
+
+    <style>
+        .verticalimg {
+            transform: rotate(90deg);
+        }
+    </style>
+
 </head>
 
 <body>
@@ -236,7 +243,8 @@
                             <div class="sp_img">
                                 <div class="zoomOutText"><a href="./works_hp_detail_3.html"
                                         class="img_square floatup"><span class="mask"><img
-                                                src="./images/hp_portfolio_FV.png" alt=""><span class="cap en">view
+                                                src="./images/hp_portfolio_vertical-80.jpg" alt=""><span
+                                                class="cap en">view
                                                 more</span></span></a>
                                 </div>
 

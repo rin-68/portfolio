@@ -14,7 +14,7 @@ section.scroll_section {
 
 .pc_container {
   display: flex;
-  height: 100%;
+  height: 100vh;
   align-items: center;
 
   /* width: 1800px; */
@@ -80,7 +80,7 @@ section.scroll_section {
 }
 
 .link {
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -139,7 +139,7 @@ section.scroll_section {
   }
   .sp_container {
     display: flex;
-    height: 100%;
+    height: 100vh;
     align-items: center;
   }
 
