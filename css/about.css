@@ -714,10 +714,12 @@ td {
 }
 
 .strength .contents > p:nth-of-type(1) {
+  color: #ec6c4e;
   margin-top: 78px;
 }
 
 .strength .contents > p:nth-of-type(2) {
+  color: #ec6c4e;
   width: 272px;
   margin-top: 32px;
 }
@@ -1022,4 +1024,39 @@ td {
 
 .fadeInTrigger {
   opacity: 0;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーー
+フェードアップ
+ーーーーーーーーーーーーーーーーーーーー*/
+
+/*==================================================
+スタート時は要素自体を透過0にするためのopacity:0;を指定する
+===================================*/
+
+.scrollup-box {
+  opacity: 0;
+}
+
+/*==================================================
+動かしたい動き（今回は” ふわっ” を採用）
+===================================*/
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

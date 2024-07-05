@@ -122,7 +122,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .page_ttl.works {
+  .page_ttl {
     display: flex;
   }
 

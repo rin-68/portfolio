@@ -636,11 +636,11 @@ SP版 左上文字
   position: absolute;
   z-index: 2;
   top: 10px;
-  left: 10px;
+  left: 65px;
   /* width: calc(100%); */
-  /* width: calc(100% - 20px); */
+  width: calc(100% - 130px);
   /* height: calc(100%); */
-  /* height: calc(100% - 20px); */
+  height: calc(100% - 30px);
   background: rgba(0, 0, 0, 0.5); /*背景色*/
 }
 
@@ -673,6 +673,22 @@ SP版 左上文字
 .zoomOutText:hover span.cap {
   /*hoverした時の変化*/
   opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .zoomOutText:hover span.mask::before {
+    /*hoverした時の変化*/
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    width: calc(100%);
+    /* width: calc(100% - 130px); */
+    height: calc(100%);
+    /* height: calc(100% - 30px); */
+    background: rgba(0, 0, 0, 0.5); /*背景色*/
+  }
 }
 
 /* ーーーーーーーーーーーーーーーーーーーー

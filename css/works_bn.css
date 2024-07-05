@@ -24,6 +24,10 @@
   border-right: 1px solid #423732;
 }
 
+.zoomOutText {
+  margin: auto;
+}
+
 .img_square {
   width: 300px;
   /* height: 366px; */
@@ -207,5 +211,20 @@ h2 {
     height: 500px;
     margin-left: 0;
     margin-right: 20px;
+  }
+}
+
+/* ホバー */
+
+.zoomOutText:hover span.mask::before {
+  top: 0px;
+  left: 0px;
+  width: calc(100%);
+  height: calc(100%);
+}
+
+@media screen and (max-width: 767px) {
+  .zoomOutText span.cap {
+    font-size: 13px;
   }
 }

@@ -64,6 +64,33 @@
         .sp_container .txt_none {
             height: 490px;
         }
+
+        /* ホバー */
+
+        .zoomOutText:hover span.mask::before {
+            top: 5px;
+            left: 186px;
+            width: calc(100% - 375px);
+            height: calc(100% - 15px);
+            border-radius: 30px;
+
+        }
+
+        .zoomOutText span.cap {
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 767px) {
+            .zoomOutText:hover span.mask::before {
+                top: 0px;
+                left: 1px;
+                width: calc(100%);
+                height: calc(100%);
+                border-radius: 0px;
+
+            }
+
+        }
     </style>
 </head>
 
@@ -107,7 +134,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="page_ttl works">
+            <div class="page_ttl">
                 <p class="en">WORKS</p>
                 <p class="en">LP</p>
             </div>
@@ -232,10 +259,14 @@
 
                     <div class="inner">
                         <div class="contents">
-                            <div class="sp_img">
-                                <a href="./works_lp_detail_1.html" class="img_square floatup">
-                                    <img src="./images/lp_usazemi_FV.jpg" alt=""></a>
-                            </div>
+                            <!-- <div class="sp_img"> -->
+                            <div class="sp_img zoomOutText"><a href="./works_lp_detail_1.html"
+                                    class="img_square floatup"><span class="mask"><img src="./images/lp_usazemi_FV.jpg"
+                                            alt=""><span class="cap en">view
+                                            more</span></span></a></div>
+                            <!-- <a href="./works_lp_detail_1.html" class="img_square floatup">
+                                    <img src="./images/lp_usazemi_FV.jpg" alt=""></a> -->
+                            <!-- </div> -->
                             <div class="txt">
                                 <h2>オンラインコミュニティ「うさゼミ」</h2>
                                 <p>レスポンシブ</p>
