@@ -4,6 +4,14 @@
    共通
  -------------------- */
 
+main {
+  scroll-snap-type: x mandatory;
+}
+
+section.scroll_section {
+  scroll-snap-align: center;
+}
+
 .profile,
 .history,
 .skills,
@@ -46,10 +54,6 @@
   .design .top_contents {
     display: block;
   }
-
-  /* .page_ttl p:nth-of-type(2) {
-    width: 86px;
-  } */
 
   .page_ttl {
     display: block;
@@ -102,7 +106,6 @@ h2 {
 }
 
 .ttl_line {
-  /* width: 486px; */
   border-bottom: 1px solid #ec6c4e;
   position: absolute;
   bottom: 38px;
@@ -112,7 +115,6 @@ h2 {
 @media screen and (max-width: 767px) {
   .pc-ttl {
     width: auto;
-    /* position: static; */
   }
 
   h2 {
@@ -127,13 +129,6 @@ h2 {
   .erase {
     display: none;
   }
-
-  /* .ttl_line {
-    top: 16px;
-    bottom: auto;
-    right: 158px;
-    left: 35px;
-  } */
 }
 
 /* --------------------
@@ -313,7 +308,6 @@ h2 {
 
 .history .top_contents {
   gap: 6%;
-  /* position: relative; */
 }
 
 .history .pc-ttl {
@@ -368,7 +362,6 @@ h3 {
   display: block;
   margin-top: 14px;
   margin-left: 9%;
-  /* position: relative; */
   z-index: 2;
 }
 
@@ -389,7 +382,6 @@ h3 {
 .history .content_last p {
   line-height: 1.5;
   letter-spacing: 0.025em;
-  /* position: relative; */
   z-index: 2;
 }
 
@@ -428,14 +420,12 @@ h3 {
 
   .history .contents {
     max-width: none;
-    /* min-width: 840px; */
     width: 840px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .history {
-    /* width: 980px; */
     width: 1080px;
     background-image: url(../images/flower002.png);
     background-repeat: no-repeat;
@@ -452,7 +442,6 @@ h3 {
     width: 290px;
     height: auto;
     margin: 69px 0px 28px;
-    /* position: relative; */
   }
 
   .history h2 {
@@ -470,7 +459,6 @@ h3 {
     top: 16px;
     bottom: auto;
     right: 301px;
-    /* left: 35px; */
   }
 
   .history .contents {
@@ -598,7 +586,6 @@ td {
   .skills .sp-ttl {
     display: block;
     height: auto;
-    /* display: flex; */
     justify-content: center;
     margin: 69px auto 28px;
   }
@@ -616,7 +603,6 @@ td {
     top: 16px;
     bottom: auto;
     right: 158px;
-    /* left: 35px; */
   }
 
   .skills .pc-ttl,
@@ -695,7 +681,6 @@ td {
 
 .strength {
   width: 62vw;
-  /* width: 650px; */
   background-image: url(../images/flower003.png);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -753,7 +738,6 @@ td {
   .strength .sp-ttl {
     display: block;
     height: auto;
-    /* display: flex; */
     justify-content: center;
 
     margin: 69px auto 65px;
@@ -768,7 +752,6 @@ td {
     top: 16px;
     bottom: auto;
     right: 137px;
-    /* left: 35px; */
   }
 
   .strength .contents > p:nth-of-type(1) {
@@ -804,7 +787,6 @@ td {
 
 @media screen and (max-width: 767px) {
   .love {
-    /* width: 110vw; */
     width: 460px;
   }
 
@@ -825,7 +807,6 @@ td {
   .love .sp-ttl {
     display: block;
     height: auto;
-    /* display: flex; */
     justify-content: center;
 
     margin: 69px auto 65px;
@@ -840,7 +821,6 @@ td {
     top: 16px;
     bottom: auto;
     right: 137px;
-    /* left: 35px; */
   }
 }
 
@@ -850,7 +830,6 @@ td {
 
 .design {
   width: 80vw;
-  /* width: 100vw; */
   background-image: url(../images/flower004.png);
   background-repeat: no-repeat;
   background-position: 88% bottom;
@@ -907,7 +886,6 @@ td {
   .design .sp-ttl {
     display: block;
     height: auto;
-    /* display: flex; */
     justify-content: center;
 
     margin: 69px auto 65px;
@@ -922,7 +900,6 @@ td {
     top: 16px;
     bottom: auto;
     right: 180px;
-    /* left: 35px; */
   }
 }
 
@@ -934,7 +911,6 @@ td {
   .strength,
   .love {
     width: 60vw;
-    /* width: 960px; */
   }
 }
 

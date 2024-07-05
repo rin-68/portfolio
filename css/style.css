@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+main {
+  scroll-snap-type: x mandatory;
+}
+
+section.scroll_section {
+  scroll-snap-align: center;
+}
+
 /* ーーーーーーーーーー
 ローディング画面
 ーーーーーーーーーー */
