@@ -335,6 +335,16 @@ h2 {
   z-index: 1;
 }
 
+.history .contents > p {
+  color: #fffcf5;
+  letter-spacing: 0.5em;
+  position: absolute;
+  /* top: 0; */
+  left: 310px;
+  bottom: 8px;
+  z-index: 2;
+}
+
 .history .content {
   border-top: 1px solid #f2917e;
   border-left: 1px solid #f2917e;
