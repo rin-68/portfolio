@@ -242,54 +242,54 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                 //         const opacity = 1 - (scrollX / secondSectionX)
                 //         bg.style.opacity = opacity
                 //     }
-            })
-            function calculate() {
-                const aboutLine = document.querySelector('.about_line')
-                const firstSection = document.querySelector('.first_section')
-                const secondCursive = document.querySelector('.second_cursive')
+                // })
+                function calculate() {
+                    const aboutLine = document.querySelector('.about_line')
+                    const firstSection = document.querySelector('.first_section')
+                    const secondCursive = document.querySelector('.second_cursive')
 
-                const firstSectionX = firstSection.getBoundingClientRect().x + firstSection.getBoundingClientRect().right
-                // console.log(firstSectionX)
-                const secondCursiveX = secondCursive.getBoundingClientRect().x
-                // console.log(secondCursiveX)
-                const lineWidth = secondCursiveX - firstSectionX
-                // console.log(lineWidth)
-                if (window.matchMedia('(min-width:768px)')) {
-                    /**画面幅が768px以上のときの処理 */
-                    const lineWidth = secondCursiveX - firstSectionX + 82
-                    console.log(lineWidth)
-                } else {
-                    /**画面幅が768px以上のときの処理 */
-                    const lineWidth = secondCursiveX - firstSectionX + 45
-                    console.log(lineWidth)
+                    const firstSectionX = firstSection.getBoundingClientRect().x + firstSection.getBoundingClientRect().right
+                    // console.log(firstSectionX)
+                    const secondCursiveX = secondCursive.getBoundingClientRect().x
+                    // console.log(secondCursiveX)
+                    const lineWidth = secondCursiveX - firstSectionX
+                    // console.log(lineWidth)
+                    if (window.matchMedia('(min-width:768px)')) {
+                        /**画面幅が768px以上のときの処理 */
+                        const lineWidth = secondCursiveX - firstSectionX + 82
+                        console.log(lineWidth)
+                    } else {
+                        /**画面幅が768px以上のときの処理 */
+                        const lineWidth = secondCursiveX - firstSectionX + 45
+                        console.log(lineWidth)
+                    }
+                    aboutLine.style.width = lineWidth + 'px'
                 }
-                aboutLine.style.width = lineWidth + 'px'
-            }
-            calculate()
-            window.addEventListener('resize', () => {
                 calculate()
-            })
-
-            const anchorLinks = document.querySelectorAll('a[href^=\\#]:not([href$=\\#])');
-
-            anchorLinks.forEach((anchorLink) => {
-                let link = anchorLink.getAttribute('href');
-                let target = document.querySelector(link);
-
-                anchorLink.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-
-                    scroll.scrollTo(target);
+                window.addEventListener('resize', () => {
+                    calculate()
                 })
-            })
+
+                const anchorLinks = document.querySelectorAll('a[href^=\\#]:not([href$=\\#])');
+
+                anchorLinks.forEach((anchorLink) => {
+                    let link = anchorLink.getAttribute('href');
+                    let target = document.querySelector(link);
+
+                    anchorLink.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        scroll.scrollTo(target);
+                    })
+                })
 
 
 
 
-        });
+            });
 
-        }) ()
+        })()
 
 
     </script>
