@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+main {
+  scroll-snap-type: none;
+}
+
 .page_ttl {
   display: none;
 }
