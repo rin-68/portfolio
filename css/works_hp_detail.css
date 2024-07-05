@@ -13,7 +13,7 @@ main {
   margin-left: 15%;
   margin-right: 100px;
   display: flex;
-  height: 100vh;
+  height: 100svh;
   align-items: center;
 }
 
@@ -82,7 +82,7 @@ h1 {
 
 .sp_container {
   display: flex;
-  height: 100vh;
+  height: 100svh;
   align-items: center;
 }
 
@@ -407,7 +407,7 @@ h2 {
 
 .pc_all {
   display: flex;
-  height: 100vh;
+  height: 100svh;
   align-items: center;
 }
 
