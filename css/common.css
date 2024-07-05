@@ -25,11 +25,12 @@ main {
   /* overflow: scroll; */
   background-color: #fffcf5;
   height: 100%;
+  height: -webkit-fill-available !important;
 }
 
 section.scroll_section {
   scroll-snap-align: center;
-  height: -webkit-fill-available !important;
+  /* height: -webkit-fill-available !important; */
 }
 
 .wrapper {
