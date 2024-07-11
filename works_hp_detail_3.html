@@ -28,17 +28,6 @@
         })(document);
     </script>
 
-    <!-- <style>
-        .allpage {
-            display: block;
-            gap: 10px;
-        }
-
-        .allpage div {
-            height: 40vh;
-        }
-    </style> -->
-
 </head>
 
 <body>
@@ -84,8 +73,6 @@
                     </ul>
                 </nav>
             </div>
-
-            <!-- SP版 -->
 
             <!-- ページタイトル -->
 
@@ -316,34 +303,7 @@
         <section data-scroll-section class="scroll_section">
             <div class="pc_all section-inner">
 
-                <!-- PC -->
-                <!-- <p class="en">ALL PAGES</p> -->
-
                 <div class="allpage">
-                    <!-- <div class="maxheight fadeInTrigger">
-                        <img src="./images/hp_portfolio_1.jpg" alt="">
-                    </div>
-                    <div class="maxheight fadeInTrigger">
-                        <img src="./images/hp_portfolio_2.jpg" alt="">
-                    </div> -->
-                    <!-- <div class="maxheight fadeInTrigger">
-                        <img src="./images/hp_haircut_4.jpg" alt="">
-                    </div> -->
-
-                    <!-- SP -->
-
-                    <!-- <div class="txt_wrapper fadeInTrigger">
-                        <p class="en">RESPONSIVE</p>
-                    </div>
-                    <div class="sp fadeInTrigger">
-                        <img src="./images/hp_cafe_sp_8@2x-80.jpg" alt="">
-                    </div>
-                    <div class="sp fadeInTrigger">
-                        <img src="./images/hp_cafe_sp_9@2x-80.jpg" alt="">
-                    </div>
-                    <div class="sp fadeInTrigger">
-                        <img src="./images/hp_cafe_sp_10@2x-80.jpg" alt="">
-                    </div> -->
                 </div>
 
 
@@ -371,8 +331,6 @@
     <script>
         (() => {
             document.addEventListener('DOMContentLoaded', () => {
-                // 下一文追加
-                gsap.registerPlugin(ScrollTrigger);
 
                 const scroll = new LocomotiveScroll({
                     el: document.querySelector('[data-scroll-container]'),
@@ -402,26 +360,14 @@
                 const bg = document.querySelector('.bg')
                 const secondSection = document.querySelector('.second_section')
                 const secondSectionX = secondSection.getBoundingClientRect().x
-                // console.log(secondSectionX)
                 scroll.on('scroll', function (event) {
                     const scrollX = event.scroll.x
-                    // console.log(scrollX)
                     fadeAnime();/* アニメーション用の関数を呼ぶ*/
 
-                    // console.log(scrollX)
                     if (scrollX <= secondSectionX) {
                         const opacity = 1 - (scrollX / secondSectionX)
                         bg.style.opacity = opacity
                     };
-
-                    // if (scrollX <= bottomTextRight) {
-                    //     // container.style.position = fixed
-                    //     container.classList.add('fixed')
-                    // }
-
-
-
-
                 })
 
 
@@ -435,7 +381,6 @@
                     //ふわっと動くきっかけのクラス名と動きのクラス名の設定
                     $('.fadeInTrigger').each(function () { //fadeInUpTriggerというクラス名が
                         var elemPos = $(this).offset().left - 50; //要素より、50px左の
-                        // console.log(elemPos)
                         var scroll = $(window).scrollLeft();
                         var windowWidth = $(window).width();
                         if (scroll >= elemPos - windowWidth) {

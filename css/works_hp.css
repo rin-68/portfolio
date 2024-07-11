@@ -16,8 +16,6 @@ section.scroll_section {
   display: flex;
   height: 100svh;
   align-items: center;
-
-  /* width: 1800px; */
   margin-left: 120px;
 }
 
@@ -61,7 +59,6 @@ section.scroll_section {
   font-size: 14px;
   line-height: 2;
   width: 176px;
-  /* height: 34px; */
   text-align: center;
   border: 1px solid #423732;
   margin: 0px auto;
@@ -73,7 +70,6 @@ section.scroll_section {
   color: #d3c4c1;
 
   width: 176px;
-  /* height: 34px; */
   text-align: center;
   border: 1px solid #d3c4c1;
   margin: 0px auto;
@@ -103,7 +99,6 @@ section.scroll_section {
   height: 120px;
   border-radius: 60px;
   border: 1px solid #53c711;
-  /* position: relative; */
 }
 
 .btn p {
@@ -111,18 +106,12 @@ section.scroll_section {
   letter-spacing: 0.2em;
   text-align: center;
   margin-top: 42px;
-  /* position: absolute;
-  top: 42px;
-  left: 19px; */
 }
 
 .btn img {
   width: 26px;
   display: block;
   margin: 10px auto auto;
-  /* position: absolute;
-  top: 75px;
-  left: 48px; */
 }
 
 .sp_container {

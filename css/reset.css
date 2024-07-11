@@ -38,10 +38,6 @@ a {
   transition: 0.3s;
 }
 
-/* a:hover {
-  opacity: 0.5;
-} */
-
 li {
   /*左の「・」を消す*/
   list-style: none;

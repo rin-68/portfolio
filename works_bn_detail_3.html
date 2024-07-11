@@ -40,36 +40,6 @@
             width: 108px;
         }
 
-        /* 横長のとき */
-
-        /* .pc_top .ttl {
-            margin-bottom: 56px;
-        }
-
-        .img_pc {
-            width: 545px;
-            height: auto;
-            margin-left: 58px;
-        }
-
-        .pc_top .img_pc img {
-            width: 100%;
-            height: auto;
-        } */
-
-        /* @media screen and (max-width: 767px) {
-
-            .pc_top .ttl {
-                margin-bottom: 29px;
-            }
-
-            .pc_top .img_pc {
-                width: 331px;
-                margin-left: 10px;
-            }
-        } */
-
-        /* 正方形のとき */
 
         .pc_top .ttl {
             margin-bottom: 20px;
@@ -132,8 +102,6 @@
                     </ul>
                 </nav>
             </div>
-
-            <!-- SP版 -->
 
             <!-- ページタイトル -->
 
@@ -235,8 +203,6 @@
                         <div class="img">
                             <div class="img_pc"> <img src="./images/bn_deluxeburger2@2x-80.jpg">
                             </div>
-                            <!-- <div class="img_sp"> <img src="./images/hp_cafe_sp@2x.png">
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -386,8 +352,6 @@
     <script>
         (() => {
             document.addEventListener('DOMContentLoaded', () => {
-                // 下一文追加
-                gsap.registerPlugin(ScrollTrigger);
 
                 const scroll = new LocomotiveScroll({
                     el: document.querySelector('[data-scroll-container]'),
@@ -417,26 +381,14 @@
                 const bg = document.querySelector('.bg')
                 const secondSection = document.querySelector('.second_section')
                 const secondSectionX = secondSection.getBoundingClientRect().x
-                // console.log(secondSectionX)
                 scroll.on('scroll', function (event) {
                     const scrollX = event.scroll.x
-                    // console.log(scrollX)
                     fadeAnime();/* アニメーション用の関数を呼ぶ*/
 
-                    // console.log(scrollX)
                     if (scrollX <= secondSectionX) {
                         const opacity = 1 - (scrollX / secondSectionX)
                         bg.style.opacity = opacity
                     };
-
-                    // if (scrollX <= bottomTextRight) {
-                    //     // container.style.position = fixed
-                    //     container.classList.add('fixed')
-                    // }
-
-
-
-
                 })
 
 
@@ -450,7 +402,6 @@
                     //ふわっと動くきっかけのクラス名と動きのクラス名の設定
                     $('.fadeInTrigger').each(function () { //fadeInUpTriggerというクラス名が
                         var elemPos = $(this).offset().left - 50; //要素より、50px左の
-                        // console.log(elemPos)
                         var scroll = $(window).scrollLeft();
                         var windowWidth = $(window).width();
                         if (scroll >= elemPos - windowWidth) {

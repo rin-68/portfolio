@@ -13,10 +13,6 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/works_hp_detail.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- CDN gsap 横から縦スクロール
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script> -->
-
     <script>
         (function (d) {
             var config = {
@@ -199,8 +195,6 @@
                         <div class="img">
                             <div class="img_pc"> <img src="./images/lp_usazemi_1@2x.png">
                             </div>
-                            <!-- <div class="img_sp"> <img src="./images/hp_cafe_sp@2x.png">
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -331,10 +325,6 @@
                 <div class="allpage">
                     <p class="en">ALL PAGES</p>
 
-                    <!-- <div class="pc-img_all">
-                        <img src="./images/lp_usazemi_all@2x-8.png" alt="" class="">
-                    </div> -->
-
 
                     <div class="maxheight fadeInTrigger">
                         <img src="./images/lp_usazemi_all_1@2x-80.jpg" alt="">
@@ -355,20 +345,6 @@
                         <img src="./images/lp_usazemi_all_6@2x-80.jpg" alt="">
                     </div>
 
-                    <!-- SP -->
-
-                    <!-- <div class="txt_wrapper fadeInTrigger">
-                        <p class="en">RESPONSIVE</p>
-                    </div>
-                    <div class="sp fadeInTrigger">
-                        <img src="./images/hp_cafe_sp_8@2x-80.jpg" alt="">
-                    </div>
-                    <div class="sp fadeInTrigger">
-                        <img src="./images/hp_cafe_sp_9@2x-80.jpg" alt="">
-                    </div>
-                    <div class="sp fadeInTrigger">
-                        <img src="./images/hp_cafe_sp_10@2x-80.jpg" alt="">
-                    </div> -->
                 </div>
 
                 <!-- リンク -->
@@ -413,9 +389,6 @@
                 })
 
 
-                // ScrollTrigger.refresh();
-
-
 
                 // ＝＝＝＝背景＝＝＝＝
 
@@ -423,13 +396,10 @@
                 const bg = document.querySelector('.bg')
                 const secondSection = document.querySelector('.second_section')
                 const secondSectionX = secondSection.getBoundingClientRect().x
-                // console.log(secondSectionX)
                 scroll.on('scroll', function (event) {
                     const scrollX = event.scroll.x
-                    // console.log(scrollX)
                     fadeAnime();/* アニメーション用の関数を呼ぶ*/
 
-                    // console.log(scrollX)
                     if (scrollX <= secondSectionX) {
                         const opacity = 1 - (scrollX / secondSectionX)
                         bg.style.opacity = opacity
@@ -447,7 +417,6 @@
                     //ふわっと動くきっかけのクラス名と動きのクラス名の設定
                     $('.fadeInTrigger').each(function () { //fadeInUpTriggerというクラス名が
                         var elemPos = $(this).offset().left - 50; //要素より、50px左の
-                        // console.log(elemPos)
                         var scroll = $(window).scrollLeft();
                         var windowWidth = $(window).width();
                         if (scroll >= elemPos - windowWidth) {

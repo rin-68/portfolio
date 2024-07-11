@@ -101,7 +101,6 @@ h1 {
 }
 
 .sp-list {
-  /* SP版リスト非表示 */
   display: none;
 }
 
@@ -183,7 +182,6 @@ h2 {
   }
 
   .pc_top .container {
-    /* position: relative; */
     margin-bottom: 111px;
   }
 
@@ -261,130 +259,6 @@ h2 {
     text-align: center;
     padding: 0;
   }
-
-  /* 画像とリストが縦並び */
-
-  /* .page_ttl.hp {
-    display: flex;
-  }
-
-  main > section:nth-of-type(1) {
-    display: none;
-  }
-  .pc_top {
-    display: none;
-  }
-
-  .sp_container.active {
-    display: flex;
-    height: 100%;
-    align-items: center;
-  }
-
-  .fixed-container.fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-
-  .inner {
-    height: 650px;
-  }
-
-  .sp_top {
-    width: 700px;
-    margin-left: 0px;
-    margin-right: 100px;
-    display: flex;
-    height: 290px;
-    align-items: stretch;
-    position: relative;
-  }
-
-  .scrolldown2 {
-    top: 59%;
-    left: 11px;
-  }
-
-  .page_ttl {
-    display: flex;
-  }
-
-  .page_ttl p:nth-of-type(1) {
-    font-size: 12px;
-    letter-spacing: 0.18em;
-    line-height: 2.5;
-    color: #fffcf5;
-    width: 70px;
-    height: 30px;
-    background: #f2917e;
-    text-align: center;
-  }
-
-  .page_ttl p:nth-of-type(2) {
-    font-size: 12px;
-    letter-spacing: 0.18em;
-    line-height: 2.5;
-    width: 40px;
-    height: 30px;
-    text-align: center;
-  }
-
-  .img {
-    margin-top: 66px;
-    margin-left: 10px;
-  }
-
-  .img_pc {
-    height: 202px;
-  }
-
-  .img_sp {
-    width: 77px;
-    top: 52px;
-    left: 262px;
-  }
-
-  .contents {
-    height: auto;
-    align-items: stretch;
-    margin-top: 17px;
-  }
-
-  .sp_ttl {
-    display: block;
-  }
-
-  h1 {
-    font-size: 14px;
-    writing-mode: vertical-lr;
-    margin-left: 28px;
-  }
-
-  .list_row:nth-of-type(n + 2) {
-    margin-top: 13px;
-  }
-
-  .list_ttl {
-    line-height: 2.2;
-    height: 33px;
-  }
-
-  .list_txt {
-    line-height: 2.2;
-    height: 33px;
-  }
-
-  .point {
-    width: 710px;
-    height: 263px;
-  }
-
-  .point p {
-    width: 330px;
-    height: 205px;
-    margin-left: 15px;
-  } */
 }
 
 /* ーーーーーーーーーー

@@ -477,9 +477,6 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                     })
                 }
 
-                // slideText(0) //下のslideText(scrollX)ではスクロールした後にしか動かないので、その前にスクロール０（画面が表示された時）に動くように指定
-
-
 
                 // ＝＝＝＝背景を２つ目のセクションに移動したら消す＝＝＝＝
 
@@ -487,10 +484,8 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                 const bg = document.querySelector('.bg')
                 const secondSection = document.querySelector('.second_section')
                 const secondSectionX = secondSection.getBoundingClientRect().x
-                // console.log(secondSectionX)
                 Locoscroll.on('scroll', function (event) {
                     const scrollX = event.scroll.x
-                    // console.log(scrollX)
                     if (scrollX <= secondSectionX) {
                         const opacity = 1 - (scrollX / secondSectionX)
                         bg.style.opacity = opacity
@@ -514,10 +509,7 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                     const contactLine = document.querySelector('.contact_line')
                     // 左側
                     const h1 = document.querySelector('h1')
-                    // const lineTop = document.querySelector('.sp_fv_line_top')
                     const topLine = document.querySelector('.top-line')
-
-                    // console.log(lineTop)//表示可能
                     const secondSection = document.querySelector('.second_section')
                     const firstContents = document.querySelector('.first_contents')
                     const secondContents = document.querySelector('.second_contents')
@@ -525,7 +517,6 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                     // 左側距離（右端）
                     var h1X = h1.getBoundingClientRect().right
                     const topLineX = topLine.getBoundingClientRect().x
-
                     const secondSectionX = secondSection.getBoundingClientRect().right
                     console.log(secondSectionX)//計算可
                     const firstContentsX = firstContents.getBoundingClientRect().right
@@ -546,7 +537,6 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                     if (window.matchMedia('(min-width:768px)').matches) {
                         /**画面幅が768px以上のときの処理 */
                         var lineWidthAbout = secondCursiveX - h1X - 15
-                        // console.log(lineWidthAbout)
                         const lineWidthWorks = worksCursiveX - secondSectionX + 82
                         var lineWidthLp = lpLineX - firstContentsX + 93
                         const lineWidthBn = bnLineX - secondContentsX + 82
@@ -559,8 +549,6 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                         contactLine.style.width = lineWidthContact + 'px'
                     } else {
                         /**画面幅が768px以下のときの処理 */
-
-
                         var lineWidthAbout = secondCursiveX - topLineX
                         const lineWidthWorks = worksCursiveX - secondSectionX + 140
                         var lineWidthLp = lpLineX - firstContentsX + 70

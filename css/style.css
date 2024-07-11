@@ -227,8 +227,6 @@ section.scroll_section {
 }
 
 .fv > div > div:nth-of-type(4) {
-  /* width: 260px; */
-  /* height: 30px; */
   margin: 34px auto auto 56%;
   z-index: 400;
 }
@@ -242,7 +240,6 @@ h1 {
   color: #ec6c4e;
   width: 327px;
   text-align: center;
-  /* padding-left: 25px; */
 }
 
 .sp-fv {
@@ -304,21 +301,17 @@ h1 {
     border-bottom: none;
     top: 336px;
     right: 198%;
-    /* right: 183px; */
   }
 
   .sp_fv_line_top {
     display: block;
     width: 55px;
-    /* height: 185px; */
     height: 62px;
     border-top: 1px solid #ec6c4e;
     border-left: 1px solid #ec6c4e;
     position: absolute;
     top: 90px;
-    /* right: 0%; */
     right: 140%;
-    /* right: 129px; */
   }
 
   .sp_fv_line_bottom {
@@ -337,9 +330,7 @@ h1 {
     /*描画位置*/
     position: absolute;
     left: 307px;
-    /* left: 210px; */
     bottom: 129px;
-    /* bottom: 9px; */
     /*テキストの形状*/
     color: #ec6c4e;
     font-size: 12px;
@@ -362,7 +353,6 @@ h1 {
     height: 9px;
     border: 1px solid #ec6c4e;
     border-radius: 50%;
-    /* background: #423732; */
     /*丸の動き1.6秒かけて透過し、永遠にループ*/
     animation: circlemove 2.6s ease-in-out infinite,
       cirlemovehide 2.6s ease-out infinite;
@@ -396,14 +386,10 @@ h1 {
   }
 
   .fv > div > div:nth-of-type(4) {
-    /* width: 289px; */
-    /* height: 453px; */
     margin: 0px auto 0px 0px;
-    /* border: 1px solid #ec6c4e; */
     position: absolute;
     top: 168px;
     right: 190%;
-    /* right: 176px; */
   }
 
   h1 {
@@ -427,8 +413,6 @@ h1 {
   display: flex;
   height: 100svh;
   align-items: center;
-
-  /* height: -webkit-fill-available; */
 }
 
 .about > .wrapper {
@@ -554,13 +538,7 @@ h2 {
 
   .about .ttl {
     margin-right: 0;
-    /* margin-left: 8%; */
   }
-
-  /* .about_line {
-    top: 90px;
-    right: 167px;
-  } */
 
   .about_content > div:nth-child(3) {
     left: 240px;
@@ -613,7 +591,6 @@ h2 {
   .about .ttl p {
     top: 47px;
     left: -64px;
-    /* left: -79px; */
   }
 
   .erase {
@@ -624,7 +601,6 @@ h2 {
     width: 197%;
     top: 90px;
     right: 170px;
-    /* left: -312px; */
   }
 
   .about_content {
@@ -660,10 +636,6 @@ h2 {
     margin-top: 3px;
   }
 
-  /* .about .txt {
-    padding-left: 26px;
-  } */
-
   .about a {
     top: -90px;
     left: 150px;
@@ -692,7 +664,6 @@ h2 {
   position: absolute;
   top: 200px;
   right: 27px;
-  /* left: -470%; */
 }
 
 h3 {
@@ -726,7 +697,6 @@ h3 {
   .works .ttl p {
     top: 47px;
     left: -33px;
-    /* left: -47px; */
   }
 
   .works_line {
@@ -952,11 +922,6 @@ h3 {
     background-size: 140px;
     margin-left: 9%;
   }
-
-  /* .lp_square h3 {
-    width: 600px;
-    left: -87%;
-  } */
 }
 
 @media screen and (max-width: 767px) {
@@ -975,14 +940,12 @@ h3 {
     width: 173px;
     height: 10px;
     background-color: transparent;
-    /* margin: 65px 150px 100px; */
     margin: 65px auto;
   }
 
   .lp_square h3 {
     padding-right: 25px;
     top: 348px;
-    /* left: -242%; */
     right: -34px;
   }
 
@@ -1038,7 +1001,6 @@ h3 {
   width: 420px;
   position: absolute;
   top: 207px;
-  /* left: -75%; */
   right: 297px;
   border-bottom: solid 1px #ec6c4e;
   z-index: 300;
@@ -1104,7 +1066,6 @@ h3 {
     width: 420px;
     top: 233px;
     right: 27px;
-    /* left: -115%; */
   }
 
   .bn_square .sp_ttl_line {
@@ -1169,7 +1130,6 @@ h3 {
   position: absolute;
   top: 200px;
   right: 30px;
-  /* left: -440px; */
 }
 
 .contact .ttl {
@@ -1278,7 +1238,6 @@ textarea {
     border-bottom: 1px solid #ec6c4e;
     position: absolute;
     top: 90px;
-    /* left: -470px; */
     right: 170px;
   }
 
@@ -1298,14 +1257,8 @@ textarea {
     text-align: center;
   }
 
-  /* form {
-    position: relative;
-  } */
-
   .contact-table {
-    /* width: 60vw; */
     min-width: 278px;
-    /* 1番小さいのでいいから475でもOK */
     height: 300px;
     margin-bottom: 0px;
     padding-right: 0%;
@@ -1326,12 +1279,10 @@ textarea {
   }
 
   input {
-    /* width: 100%; */
     height: 39px;
   }
 
   textarea {
-    /* width: 100%; */
     height: 152px;
   }
 
@@ -1344,8 +1295,6 @@ textarea {
     border-radius: 3px;
     background: #8c756f;
     border: none;
-
-    /* position: absolute; */
     top: 345px;
     left: 2px;
   }

@@ -40,22 +40,6 @@
             width: 108px;
         }
 
-        /* 横長のとき */
-
-        /* .pc_top .ttl {
-            margin-bottom: 56px;
-        }
-
-        .img_pc {
-            width: 545px;
-            height: auto;
-            margin-left: 58px;
-        }
-
-        .pc_top .img_pc img {
-            width: 100%;
-            height: auto;
-        } */
 
         /* 正方形のとき */
 
@@ -88,24 +72,6 @@
         .point {
             width: 400px;
         }
-
-
-        /* SP版 横長のとき */
-
-        /* .sp_top .img {
-            margin-top: 85px;
-            margin-left: 71px;
-        }
-
-        .sp_top .img_pc {
-            width: 290px;
-            height: auto;
-        }
-
-        .sp_top .img_pc img {
-            width: 100%;
-            height: auto;
-        } */
     </style>
 
 </head>
@@ -153,8 +119,6 @@
                     </ul>
                 </nav>
             </div>
-
-            <!-- SP版 -->
 
             <!-- ページタイトル -->
 
@@ -256,8 +220,6 @@
                         <div class="img">
                             <div class="img_pc"> <img src="./images/bn_supaisukennkyuujyo_1.jpg">
                             </div>
-                            <!-- <div class="img_sp"> <img src="./images/hp_cafe_sp@2x.png">
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -404,8 +366,6 @@
     <script>
         (() => {
             document.addEventListener('DOMContentLoaded', () => {
-                // 下一文追加
-                gsap.registerPlugin(ScrollTrigger);
 
                 const scroll = new LocomotiveScroll({
                     el: document.querySelector('[data-scroll-container]'),
@@ -435,26 +395,14 @@
                 const bg = document.querySelector('.bg')
                 const secondSection = document.querySelector('.second_section')
                 const secondSectionX = secondSection.getBoundingClientRect().x
-                // console.log(secondSectionX)
                 scroll.on('scroll', function (event) {
                     const scrollX = event.scroll.x
-                    // console.log(scrollX)
                     fadeAnime();/* アニメーション用の関数を呼ぶ*/
 
-                    // console.log(scrollX)
                     if (scrollX <= secondSectionX) {
                         const opacity = 1 - (scrollX / secondSectionX)
                         bg.style.opacity = opacity
                     };
-
-                    // if (scrollX <= bottomTextRight) {
-                    //     // container.style.position = fixed
-                    //     container.classList.add('fixed')
-                    // }
-
-
-
-
                 })
 
 
@@ -468,7 +416,6 @@
                     //ふわっと動くきっかけのクラス名と動きのクラス名の設定
                     $('.fadeInTrigger').each(function () { //fadeInUpTriggerというクラス名が
                         var elemPos = $(this).offset().left - 50; //要素より、50px左の
-                        // console.log(elemPos)
                         var scroll = $(window).scrollLeft();
                         var windowWidth = $(window).width();
                         if (scroll >= elemPos - windowWidth) {

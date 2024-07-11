@@ -143,13 +143,6 @@
         </p>
     </div>
 
-    <!-- コピーライト -->
-
-    <!-- <div class="copy">
-        <p> <small>&copy; 2024 KAORI'S DESIGN</small>
-        </p>
-    </div> -->
-
     <!-- 背景 -->
 
     <div class="bg"></div>
@@ -761,9 +754,6 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                     const scrollX = event.scroll.x
                     fadeAnime();/* アニメーション用の関数を呼ぶ*/
                     delayScrollAnime();/* アニメーション用の関数を呼ぶ*/
-
-
-                    // console.log(scrollX)
                     if (scrollX <= secondSectionX) {
                         const opacity = 1 - (scrollX / secondSectionX)
                         bg.style.opacity = opacity
@@ -832,7 +822,6 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                     //ふわっと動くきっかけのクラス名と動きのクラス名の設定
                     $('.fadeInTrigger').each(function () { //fadeInUpTriggerというクラス名が
                         var elemPos = $(this).offset().left + 50; //要素より、50px左(-50)の
-                        // console.log(elemPos)
                         var scroll = $(window).scrollLeft();
                         var windowWidth = $(window).width();
                         if (scroll >= elemPos - windowWidth) {
@@ -893,11 +882,6 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                     delayScrollAnime();/* アニメーション用の関数を呼ぶ*/
                 });// ここまで画面をスクロールをしたら動かしたい場合の記述
 
-                // // 画面が読み込まれたらすぐに動かしたい場合の記述
-                // $(window).on('load', function () {
-                //     delayScrollAnime();/* アニメーション用の関数を呼ぶ*/
-                // });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
-
 
 
                 // ＝＝＝＝セクションを繋ぐ直線を計算して表示する＝＝＝＝
@@ -917,14 +901,12 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                     const designLineSp = document.querySelector('.design_line_sp')
                     // 左側（PC、SP共通）
                     const firstSection = document.querySelector('.first-section')
-                    // console.log(firstSection)
                     const secondSection = document.querySelector('.second-section')
                     const thirdSection = document.querySelector('.third-section')
                     const forthSection = document.querySelector('.forth-section')
                     const fifthSection = document.querySelector('.fifth-section')
                     // 左側距離（右端）
                     const firstSectionRight = firstSection.getBoundingClientRect().right
-                    // console.log(firstSectionRight)
                     const secondSectionRight = secondSection.getBoundingClientRect().right
                     const thirdSectionRight = thirdSection.getBoundingClientRect().right
                     const forthSectionRight = forthSection.getBoundingClientRect().right
@@ -932,7 +914,6 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                     // 右側（上：PC、下：SP）
                     const historyCursive = document.querySelector('.history_cursive')
                     const historyCursiveSp = document.querySelector('.history_cursive_sp')
-                    // console.log(historyCursive)
                     const skillsCursive = document.querySelector('.skills_cursive')
                     const skillsCursiveSp = document.querySelector('.skills_cursive_sp')
                     const stregthCursive = document.querySelector('.strength_cursive')
@@ -943,7 +924,6 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                     const designCursiveSp = document.querySelector('.design_cursive_sp')
                     // 右側距離（左端）（上：PC、下：SP）
                     const historyCursiveX = historyCursive.getBoundingClientRect().x
-                    // console.log(historyCursiveX)
                     const skillsCursiveX = skillsCursive.getBoundingClientRect().x
                     const skillsCursiveSpX = skillsCursiveSp.getBoundingClientRect().x
                     const strengthCursiveX = stregthCursive.getBoundingClientRect().x

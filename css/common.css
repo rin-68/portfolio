@@ -17,13 +17,11 @@ body {
   background-color: #fffcf5;
   overflow-y: hidden;
   height: 100svh;
-  /* height: -webkit-fill-available !important; */
 }
 
 main {
   overflow: hidden !important;
   scroll-snap-type: x mandatory;
-  /* overflow: scroll; */
   background-color: #fffcf5;
   height: 100%;
 }
@@ -638,9 +636,7 @@ SP版 左上文字
   z-index: 2;
   top: 10px;
   left: 65px;
-  /* width: calc(100%); */
   width: calc(100% - 130px);
-  /* height: calc(100%); */
   height: calc(100% - 30px);
   background: rgba(0, 0, 0, 0.5); /*背景色*/
 }
@@ -685,9 +681,7 @@ SP版 左上文字
     top: 0px;
     left: 0px;
     width: calc(100%);
-    /* width: calc(100% - 130px); */
     height: calc(100%);
-    /* height: calc(100% - 30px); */
     background: rgba(0, 0, 0, 0.5); /*背景色*/
   }
 }
