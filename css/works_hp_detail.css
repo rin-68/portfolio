@@ -157,6 +157,7 @@ h2 {
 
 .point p {
   font-size: 14px;
+  text-align: justify;
   width: 290px;
   height: 313px;
   margin-top: 57px;
@@ -384,8 +385,6 @@ h2 {
   width: 120px;
   height: 120px;
   border-radius: 60px;
-  background: #fff;
-  border: 1px solid #53c711;
 }
 
 .sp_all {
