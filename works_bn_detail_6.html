@@ -377,77 +377,59 @@
 
 
     <script>
-        (() => {
-            document.addEventListener('DOMContentLoaded', () => {
-
-                const scroll = new LocomotiveScroll({
-                    el: document.querySelector('[data-scroll-container]'),
+        window.addEventListener('load', () => {
+            const scroll = new LocomotiveScroll({
+                el: document.querySelector('[data-scroll-container]'),
+                direction: 'horizontal',
+                smooth: true,
+                tablet: {
                     direction: 'horizontal',
                     smooth: true,
-                    tablet: {
-                        direction: 'horizontal',
-                        smooth: true,
-
-                    },
-                    smartphone: {
-                        direction: 'horizontal',
-                        smooth: true,
-
-                    }
-
-                })
-
-
-                ScrollTrigger.refresh();
-
-
-
-                // ＝＝＝＝背景＝＝＝＝
-
-
-                const bg = document.querySelector('.bg')
-                const secondSection = document.querySelector('.second_section')
-                const secondSectionX = secondSection.getBoundingClientRect().x
-                scroll.on('scroll', function (event) {
-                    const scrollX = event.scroll.x
-                    fadeAnime();/* アニメーション用の関数を呼ぶ*/
-
-                    if (scrollX <= secondSectionX) {
-                        const opacity = 1 - (scrollX / secondSectionX)
-                        bg.style.opacity = opacity
-                    };
-                })
-
-
-
-                // ＝＝＝＝ALLPAGESが右からフェードイン＝＝＝＝
-
-
-                // 動きのきっかけとなるアニメーションの名前を定義
-                function fadeAnime() {
-
-                    //ふわっと動くきっかけのクラス名と動きのクラス名の設定
-                    $('.fadeInTrigger').each(function () { //fadeInUpTriggerというクラス名が
-                        var elemPos = $(this).offset().left - 50; //要素より、50px左の
-                        var scroll = $(window).scrollLeft();
-                        var windowWidth = $(window).width();
-                        if (scroll >= elemPos - windowWidth) {
-                            $(this).addClass('fadeIn');
-                            // 画面内に入ったらfadeInというクラス名を追記
-                        } else {
-                            $(this).removeClass('fadeIn');
-                            // 画面外に出たらfadeInというクラス名を外す
-                        }
-                    });
+                },
+                smartphone: {
+                    direction: 'horizontal',
+                    smooth: true,
                 }
-                // 画面をスクロールをしたら動かしたい場合の記述
-                $(window).scroll(function () {
-                    fadeAnime();/* アニメーション用の関数を呼ぶ*/
-                });// ここまで画面をスクロールをしたら動かしたい場合の記述
+            });
 
-            })
+            // ＝＝＝＝背景＝＝＝＝
+            const bg = document.querySelector('.bg');
+            const secondSection = document.querySelector('.second_section');
+            const secondSectionX = secondSection.getBoundingClientRect().left;
 
-        })()
+            scroll.on('scroll', function (event) {
+                const scrollX = event.scroll.x;
+                console.log(scrollX);
+                fadeAnime(scrollX); // アニメーション用の関数を呼ぶ
+
+                if (scrollX <= secondSectionX) {
+                    const opacity = 1 - (scrollX / secondSectionX);
+                    bg.style.opacity = opacity;
+                }
+            });
+
+            // ＝＝＝＝ALLPAGESが右からフェードイン＝＝＝＝
+            function fadeAnime(scrollX) {
+                document.querySelectorAll('.fadeInTrigger').forEach(elem => {
+                    const elemPos = elem.getBoundingClientRect().left - 50 + scrollX;
+                    const windowWidth = window.innerWidth;
+
+                    if (scrollX >= elemPos - windowWidth) {
+                        elem.classList.add('fadeIn');
+                    } else {
+                        elem.classList.remove('fadeIn');
+                    }
+                });
+            }
+
+            // 初期読み込み時にアニメーションを適用
+            fadeAnime(0);
+
+            // スクロールイベントでアニメーションを適用
+            scroll.on('scroll', function (event) {
+                fadeAnime(event.scroll.x);
+            });
+        });
 
     </script>
     <script>
